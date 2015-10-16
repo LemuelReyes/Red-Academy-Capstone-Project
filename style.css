@@ -5,20 +5,27 @@ and why the website doesnt adapt when you change window size
  also ask teacher how to stretch pages across.*/
 
 /*find out how to fix the scroll mechanism */
+body {
+  margin: 0;
+}
+
+
+header {
+  position: fixed;
+  text-align: center;
+  margin: 0;
+  background-color: hsla(206, 8%, 32%, 0.3);
+  width: 100%;
+}
+
 
 .header-title {
   font-size: 60px;
   color: rgba(248, 255, 255, 0.9);
-  text-align: center;
   font-weight: bold;
-  font-family:  'Roboto:100', sans-serif;, sans-serif, monospace;
-  border-top: 0px;
+  font-family:  'Roboto:100',sans-serif, monospace;
   letter-spacing: 0.5px;
   text-transform: uppercase;
-  background-color: hsla(206, 8%, 32%, 0.3);
-  z-index: 5;
-  position: fixed;
-  width: 100%;
   margin: 0;
 
 }
@@ -28,27 +35,19 @@ and why the website doesnt adapt when you change window size
 /* navigational. Some code here was overriden by way of specificity - refer to (a selector)
 what this means is the a: selector has control over the colors of the navigational menu links */
 
-nav ul {
+nav {
   font-size: 20px;
   color: rgba(248, 255, 255, 0.9);
   border-top: 0px;
   letter-spacing: 0.5px;
   text-transform: uppercase;
   font-family:  'Roboto:100', sans-serif;, sans-serif, monospace;
-  background-color: hsla(206, 8%, 32%, 0.3);
-  text-align: center;
-  z-index: 5;
-  position: fixed;
   width: 100%;
-  margin: 69px;
-  margin-left: 0;
-  padding-left: 0;
-  display: block;
 }
 
-nav li {
-  display: inline-block;
+li {
   margin: 5px 10px;
+  display: inline-block;
 }
 
 
