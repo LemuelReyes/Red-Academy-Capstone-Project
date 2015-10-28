@@ -5,6 +5,7 @@ and why the website doesnt adapt when you change window size
  also ask teacher how to stretch pages across.*/
 
 /*find out how to fix the scroll mechanism */
+
 body {
   margin: 0;
 }
@@ -14,13 +15,16 @@ header {
   position: fixed;
   text-align: center;
   margin: 0;
-  background-color: hsla(206, 8%, 32%, 0.3);
+  background-image: linear-gradient(
+    to right, rgba(53, 48, 44, 1) 0%, rgba(53, 48, 48, 0.9) 33%,
+    rgba(53, 48, 48, 0.6) 66%, rgba(53, 48, 48, 0.3) 100%);
   width: 100%;
+
 }
 
 
 .header-title {
-  font-size: 60px;
+  font-size: 15px;
   color: rgba(248, 255, 255, 0.9);
   font-weight: bold;
   font-family:  'Roboto:100',sans-serif, monospace;
@@ -36,7 +40,7 @@ header {
 what this means is the a: selector has control over the colors of the navigational menu links */
 
 nav {
-  font-size: 20px;
+  font-size: 15px;
   color: rgba(248, 255, 255, 0.9);
   border-top: 0px;
   letter-spacing: 0.5px;
@@ -50,6 +54,28 @@ li {
   display: inline-block;
 }
 
+
+/* there are two nav buttons because i wanted the color of the nav list to change
+as the reader reads from left to right and also contrasts with
+the header background color to make it visually appealing*/
+
+.nav-button {
+  border-top-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  background-color: rgba(69, 51, 60, 0.6);
+  margin: 10px 10px;
+  -moz-box-shadow: 4px 6px 40px #000000;
+  -webkit-box-shadow: 4px 6px 40px #000000;
+  box-shadow: 4px 6px 40px #000000;
+  transition: all 0.2s ease 0.6s;
+  font-size: 15px;
+}
+
+.nav-button:hover {
+  font-size: 18px;
+  background-color: rgba(69, 51, 60, 1);
+
+}
 
 /* text in the content area */
 
@@ -190,3 +216,9 @@ a:active {
   color: black;
 }
 /*add a footer */
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
