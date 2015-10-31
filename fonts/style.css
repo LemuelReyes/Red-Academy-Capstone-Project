@@ -1,0 +1,229 @@
+/*find out how to fix the scroll mechanism */
+
+/* ========================================================================
+body
+==========================================================================*/
+
+body {
+  margin: 0;
+}
+
+.black-block-column {
+  background-color: black;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  display:block;
+  width: 1300px;
+  height: 100px;
+  padding-top: 45px;
+}
+
+
+/* ===========================================================================
+header
+============================================================================*/
+
+header {
+  position: fixed;
+  text-align: center;
+  margin: 0px;
+  background-image: linear-gradient(
+    to right, rgba(53, 48, 44, 1) 0%, rgba(53, 48, 48, 0.9) 33%,
+    rgba(53, 48, 48, 0.6) 66%, rgba(53, 48, 48, 0.3) 100%);
+  width: 100%;
+
+}
+
+
+.header-title {
+  width: 33%;
+  float:left;
+  font-size: 20px;
+  color: rgba(248, 255, 255, 0.9);
+  font-weight: bold;
+  font-family:  'Roboto:100',sans-serif, monospace;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+
+
+/*
+==============================================================================
+navigational. Some code here was overriden by way of specificity - refer to (a selector)
+what this means is the a: selector has control over the colors of the navigational menu links
+===============================================================================*/
+
+nav {
+  font-size: 15px;
+  color: rgba(248, 255, 255, 0.9);
+  border-top: 0px;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  font-family:  'Roboto:100', sans-serif;, sans-serif, monospace;
+  width: 66%;
+  float:right;
+}
+
+li {
+  margin: 5px 10px;
+  display: inline-block;
+}
+
+
+
+/* =====================================================================
+text in the content area
+========================================================================*/
+
+h2 {
+  color:  white;
+  font-size: 34px;
+  text-align: center;
+  font-family: 'Roboto Slab', sans-serif, monospace;
+  border: 25px solid white;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+
+}
+
+h3 {
+  color: black;
+  font-size: 20px;
+  text-align: center;
+  font-family: 'Roboto', georgia, monospace;
+  border: 25px solid white;
+  letter-spacing: 1.5px;
+  line-height: 40px;
+}
+
+.who-we-are {
+  text-align: left;
+}
+
+.testimonial-button {
+  border-top-left-radius: 5px;
+border-bottom-right-radius: 5px;
+background-color: rgba(69, 51, 60, 0.6);
+margin: 10px 10px;
+transition: all 0.1s ease 0.4s;
+font-size: 15px;
+}
+
+.testimonial-button:hover {
+  font-size: 25px;
+  background:-webkit-gradient(linear, 80% 20%, 10% 21%, from(#8B958C), to(#5B6765));
+  -moz-box-shadow: 4px 6px 40px #000000;
+  -webkit-box-shadow: 4px 6px 40px #000000;
+  box-shadow: 4px 6px 40px #000000;
+}
+
+.location-description:after {
+  content: "";
+  display: table;
+  clear: both;
+  width: 33%
+  float: right;
+
+
+}
+
+
+/* directions, email, links are wrapped in span*/
+
+span {
+  background-color: black;
+  color: white;
+}
+
+/* link for ICCRC */
+
+#ICCRC-link {
+  text-color: black;
+}
+
+/* images used for the main page, titled accordingly */
+
+/* get back to fixing this hero-image*/
+
+.hero-image {
+  background-image: url("images/white-table.jpg");
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.man-in-library-image {
+  display: block;
+  margin: 0 auto;
+}
+
+.paper-map-image {
+  display: block;
+  margin: 0 auto;
+}
+
+
+.team-meeting-image {
+  display: block;
+  margin: 0 auto;
+}
+
+.heart-drawing-image {
+  display: block;
+  margin: 0 auto;
+}
+
+/*
+===========================================================================
+images end
+===========================================================================*/
+
+
+.office-location {
+/* must fix */
+display: block;
+margin: 0 auto;
+height: 400px;
+border top: 40px solid white;
+border-bottom: 20px solid white;
+float: left;
+width: 55%;
+padding: 15px;
+}
+
+.contact-information {
+  color: black;
+  font-size: 20px;
+  text-align: center;
+  font-family: 'Roboto', georgia, monospace;
+  border: 25px solid white;
+  letter-spacing: 1.5px;
+  line-height: 5px;
+
+}
+
+/* =============================================================================
+link appearance
+==============================================================================*/
+
+a:link  {
+  color: rgba(248, 255, 255, 0.9);
+  text-decoration:none;
+}
+
+a:visited {
+  color: rgba(248, 255, 255, 0.9);
+
+}
+
+a:hover {
+  color: white;
+}
+
+a:active {
+  color: white;
+}
+/*add a footer */
