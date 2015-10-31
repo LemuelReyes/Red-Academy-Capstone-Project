@@ -1,20 +1,32 @@
-
-/*also ask
-why theres white space in header?
-and why the website doesnt adapt when you change window size
- also ask teacher how to stretch pages across.*/
-
 /*find out how to fix the scroll mechanism */
+
+/* ========================================================================
+body
+==========================================================================*/
 
 body {
   margin: 0;
 }
 
+.black-block-column {
+  background-color: black;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  display:block;
+  width: 1300px;
+  height: 100px;
+  padding-top: 45px;
+}
+
+
+/* ===========================================================================
+header
+============================================================================*/
 
 header {
   position: fixed;
   text-align: center;
-  margin: 0;
+  margin: 0px;
   background-image: linear-gradient(
     to right, rgba(53, 48, 44, 1) 0%, rgba(53, 48, 48, 0.9) 33%,
     rgba(53, 48, 48, 0.6) 66%, rgba(53, 48, 48, 0.3) 100%);
@@ -24,20 +36,24 @@ header {
 
 
 .header-title {
-  font-size: 15px;
+  width: 33%;
+  float:left;
+  font-size: 20px;
   color: rgba(248, 255, 255, 0.9);
   font-weight: bold;
   font-family:  'Roboto:100',sans-serif, monospace;
   letter-spacing: 0.5px;
   text-transform: uppercase;
   margin: 0;
-
 }
 
 
 
-/* navigational. Some code here was overriden by way of specificity - refer to (a selector)
-what this means is the a: selector has control over the colors of the navigational menu links */
+/*
+==============================================================================
+navigational. Some code here was overriden by way of specificity - refer to (a selector)
+what this means is the a: selector has control over the colors of the navigational menu links
+===============================================================================*/
 
 nav {
   font-size: 15px;
@@ -46,7 +62,8 @@ nav {
   letter-spacing: 0.5px;
   text-transform: uppercase;
   font-family:  'Roboto:100', sans-serif;, sans-serif, monospace;
-  width: 100%;
+  width: 66%;
+  float:right;
 }
 
 li {
@@ -55,38 +72,20 @@ li {
 }
 
 
-/* there are two nav buttons because i wanted the color of the nav list to change
-as the reader reads from left to right and also contrasts with
-the header background color to make it visually appealing*/
 
-.nav-button {
-  border-top-left-radius: 5px;
-  border-bottom-right-radius: 5px;
-  background-color: rgba(69, 51, 60, 0.6);
-  margin: 10px 10px;
-  -moz-box-shadow: 4px 6px 40px #000000;
-  -webkit-box-shadow: 4px 6px 40px #000000;
-  box-shadow: 4px 6px 40px #000000;
-  transition: all 0.1s ease 0.4s;
-  font-size: 15px;
-}
-
-.nav-button:hover {
-  font-size: 18px;
-  background:-webkit-gradient(linear, 80% 20%, 10% 21%, from(#8B958C), to(#5B6765));
-
-}
-
-/* text in the content area */
+/* =====================================================================
+text in the content area
+========================================================================*/
 
 h2 {
-  color:  #202020;
-  font-size: 35px;
+  color:  white;
+  font-size: 34px;
   text-align: center;
   font-family: 'Roboto Slab', sans-serif, monospace;
   border: 25px solid white;
   letter-spacing: 0.5px;
   text-transform: uppercase;
+
 }
 
 h3 {
@@ -103,6 +102,23 @@ h3 {
   text-align: left;
 }
 
+.testimonial-button {
+  border-top-left-radius: 5px;
+border-bottom-right-radius: 5px;
+background-color: rgba(69, 51, 60, 0.6);
+margin: 10px 10px;
+transition: all 0.1s ease 0.4s;
+font-size: 15px;
+}
+
+.testimonial-button:hover {
+  font-size: 25px;
+  background:-webkit-gradient(linear, 80% 20%, 10% 21%, from(#8B958C), to(#5B6765));
+  -moz-box-shadow: 4px 6px 40px #000000;
+  -webkit-box-shadow: 4px 6px 40px #000000;
+  box-shadow: 4px 6px 40px #000000;
+}
+
 .location-description:after {
   content: "";
   display: table;
@@ -114,60 +130,56 @@ h3 {
 }
 
 
+/* directions, email, links are wrapped in span*/
+
 span {
   background-color: black;
   color: white;
 }
 
+/* link for ICCRC */
+
 #ICCRC-link {
-
   text-color: black;
-
 }
 
 /* images used for the main page, titled accordingly */
 
-/* ask teacher why i had to set the border-top to solve the problem of the image
-overlapping the header? */
+/* get back to fixing this hero-image*/
 
-.white-desk-image {
-  display: block;
-  margin: 0 auto;
-  width: 100%;
-  height: 600px;
+.hero-image {
+  background-image: image("images/white-table.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
 }
-
 
 .man-in-library-image {
   display: block;
   margin: 0 auto;
-  width: 100%;
-  height: 100%;
 }
-/* maybe change the name to be more specific */
+
 .paper-map-image {
   display: block;
   margin: 0 auto;
-  width: 100%;
-  height: 500px;
 }
 
 
 .team-meeting-image {
   display: block;
   margin: 0 auto;
-  width: 100%;
-  height: 500px;
 }
 
 .heart-drawing-image {
   display: block;
   margin: 0 auto;
-  width: 100%;
-  height: 100%;
 }
 
-/* images end*/
+/*
+===========================================================================
+images end
+===========================================================================*/
 
 
 .office-location {
@@ -193,7 +205,9 @@ padding: 15px;
 
 }
 
-/* link appearance */
+/* =============================================================================
+link appearance
+==============================================================================*/
 
 a:link  {
   color: rgba(248, 255, 255, 0.9);
