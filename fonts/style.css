@@ -145,9 +145,9 @@ a:active {
 
 .hero-sub-text {
   position: absolute;
-  margin-top: 330px;
-  margin-left: 120px;
-  font-size: 20px;
+  margin-top: 225px;
+  margin-left: 150px;
+  font-size: 15px;
   font-family: 'Roboto:100', sans-serif, monospace;
   letter-spacing: 0.5px;
   text-align: center;
@@ -171,6 +171,121 @@ border-bottom-left-radius:29px;
 border-bottom-right-radius:0px;
 
 }
+
+/* about page */
+
+/* text */
+
+
+
+.black-block-column {
+  background-color: black;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  display:block;
+  width: 100%;
+  height: 100px;
+}
+
+h2 {
+  color:  white;
+  font-size: 34px;
+  text-align: center;
+  font-family: 'Roboto Slab', sans-serif, monospace;
+
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+
+}
+
+h3 {
+  color: black;
+  font-size: 15px;
+  text-align: center;
+  font-family: 'Roboto', georgia, monospace;
+  border: 1px solid white;
+  letter-spacing: 1.5px;
+  line-height: 40px;
+}
+
+.who-we-are {
+  text-align: left;
+}
+
+/* testimonial buttons animated */
+
+.testimonial-button {
+border-top-left-radius: 5px;
+border-bottom-right-radius: 5px;
+background-color: rgba(69, 51, 60, 0.6);
+margin: 10px 10px;
+transition: all 0.1s ease 0.4s;
+font-size: 15px;
+}
+
+.testimonial-button:hover {
+  font-size: 25px;
+  background:-webkit-gradient(linear, 80% 20%, 10% 21%, from(#8B958C), to(#5B6765));
+  -moz-box-shadow: 4px 6px 40px #000000;
+  -webkit-box-shadow: 4px 6px 40px #000000;
+  box-shadow: 4px 6px 40px #000000;
+}
+
+.location-description:after {
+  content: "";
+  display: table;
+  clear: both;
+  width: 33%
+  float: right;
+}
+
+
+/* directions, email, links are wrapped in span*/
+
+span {
+  background-color: black;
+  color: white;
+}
+
+/* link for ICCRC */
+
+#ICCRC-link {
+  text-color: black;
+}
+
+/* images */
+
+.man-in-library-image {
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+
+}
+
+.paper-map-image {
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+}
+
+
+.team-meeting-image {
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.heart-drawing-image {
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+}
+
+
+
+
+
+
 
 
 /*==============================================================================
