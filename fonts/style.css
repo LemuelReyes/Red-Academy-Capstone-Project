@@ -1,40 +1,25 @@
-/* LEGEND:
-
-0.1 issues
-
-1.original css
-    body
-    header
-    navigational
-    text
-    images
-    link apperance
-2.breakpoint-480
-3.breakpoint-720
-4.breakpoint-1024
-
-*/
-
-
-/*=============================================================================
-0.1 issues
-
-480 breakpoint  hero-text is not scaling down, not sure whats causing it.
-
-720 breakpoint there is space to scroll to the right, not sure whats causing it
-also the hero image has white space at margin top, not sure whats causing.
-
-1024 breakpoint there is space to scroll to the right, not sure whats causing it
-also the hero image has white space at margin top, not sure whats causing.
-
-@fontface in fonts folder won't load
-
-*/
-
-
-/*=============================================================================
-2.breakpoint-480
+/*
 ===============================================================================
+                              LEGEND:
+
+                              1.issues
+                              2.breakpoint-480
+                              3.breakpoint-720
+                              4.breakpoint-1024
+===============================================================================
+*/
+
+
+/*-----------------------------------------------------------------------------
+                           1.issues:
+                              had trouble figuring out @fontface.
+-------------------------------------------------------------------------------
+*/
+
+
+/*-----------------------------------------------------------------------------
+2.breakpoint-480
+-----------------------------------------------------------------------------
 */
 
 @media all and (min-width: 480px) {
@@ -95,7 +80,6 @@ a:link  {
 
 a:visited {
   color: rgba(248, 255, 255, 0.9);
-
 }
 
 a:hover {
@@ -112,7 +96,7 @@ a:active {
   margin-top: 92px;
   background-image: url("../images/hero-img.jpe") no-repeat scroll center;
   width: 100%;
-  height: auto;
+  height: 100%;
 }
 
 .hero-main-text {
@@ -140,7 +124,6 @@ a:active {
   border-top-right-radius:0px;
   border-bottom-left-radius:0px;
   border-bottom-right-radius:5px;
-
 }
 
 .hero-sub-text {
@@ -153,7 +136,6 @@ a:active {
   text-align: center;
   text-transform: lowercase;
   color: white;
-
   border:none 15px #1a121a;
   background-color:  rgba(53, 48, 48, 0.5);
   border:none 7px #1a121a;
@@ -175,7 +157,6 @@ border-bottom-right-radius:0px;
 /* about page */
 
 /* text */
-
 
 .first-black-column {
   border-top: 5px black solid;
@@ -311,11 +292,21 @@ span {
 
 
 
-/*==============================================================================
+/*-----------------------------------------------------------------------------
  3.breakpoint-720
-=============================================================================*/
+-----------------------------------------------------------------------------*/
 
 @media all and (min-width: 720px) {
+
+/* main page */
+
+.hero-image {
+  margin-top: 67px;
+  background-image: url("../images/hero-img.jpe") no-repeat scroll center;
+  width: 100%;
+  height: 100%;
+}
+
 
   .hero-main-text {
     position: absolute;
@@ -325,8 +316,8 @@ span {
     color: white;
     text-align: center;
     text-transform: uppercase;
-    margin-top: 300px;
-    margin-left: 90px;
+    margin-top: 250px;
+    margin-left: 85px;
     background-color:  rgba(53, 48, 48, 0.5);
     border:none 15px;
     -moz-border-radius-topleft: 50px;
@@ -352,7 +343,7 @@ span {
     color: white;
     text-align: center;
     text-transform: lowercase;
-    margin-top: 359px;
+    margin-top: 320px;
     margin-left: 300px;
     border:none 15px #1a121a;
     background-color:  rgba(53, 48, 48, 0.5);
@@ -372,23 +363,41 @@ span {
   }
 
 
+/* about */
+
+.about-main-img {
+  margin-top: 67px;
+  background-image: url("../images/about-main-img.jpe") no-repeat scroll center;
+  width: 100%;
+  height: auto;
 }
 
-/* ============================================================================
-breakpoint 720 end
-==============================================================================*/
+/* contact */
+
+.office-location {
+  margin-top: 67px;
+  width: 100%;
+  height: auto;
+}
+
+}
 
 
-/* ============================================================================
+/* -----------------------------------------------------------------------------
 breakpoint-1024
-==============================================================================*/
+-----------------------------------------------------------------------------*/
 
-@media all and (min-width: 1024px) and (max-width: 1024px) {
+@media all and (min-width: 1024px) {
 
-  /*
-  ===============================================================================
-  text
-  ==============================================================================*/
+  /* main page */
+
+  .hero-image {
+    margin-top: 67px;
+    background-image: url("../images/hero-img.jpe") no-repeat scroll center;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+  }
 
   .hero-main-text {
     position: absolute;
@@ -398,7 +407,7 @@ breakpoint-1024
     color: white;
     text-align: center;
     text-transform: uppercase;
-    margin-top: 400px;
+    margin-top: 270px;
     margin-left: 100px;
     background-color:  rgba(53, 48, 48, 0.5);
     border:none 15px;
@@ -414,7 +423,6 @@ breakpoint-1024
     border-top-right-radius:0px;
     border-bottom-left-radius:0px;
     border-bottom-right-radius:51px;
-
   }
 
   .hero-sub-text {
@@ -425,7 +433,7 @@ breakpoint-1024
     color: white;
     text-align: center;
     text-transform: lowercase;
-    margin-top: 478px;
+    margin-top: 348px;
     margin-left: 450px;
     border:none 15px #1a121a;
     background-color:  rgba(53, 48, 48, 0.5);
@@ -444,61 +452,126 @@ breakpoint-1024
   border-bottom-right-radius:0px;
   }
 
+/* about */
 
-  .testimonial-button {
-  font-size: 25px;
-  padding: 30px 0px;
-  border-top-left-radius: 5px;
-  border-bottom-right-radius: 5px;
-  background-color: rgba(69, 51, 60, 0.6);
-  margin: 10px 10px;
-  transition: all 0.1s ease 0.4s;
-  }
 
-  .testimonial-button:hover {
-    font-size: 50px;
-    padding-top: 50px 0px;
-    background:-webkit-gradient(linear, 80% 20%, 10% 21%, from(#8B958C), to(#5B6765));
-    -moz-box-shadow: 4px 6px 40px #000000;
-    -webkit-box-shadow: 4px 6px 40px #000000;
-    box-shadow: 4px 6px 40px #000000;
-  }
+/*text*/
 
-  h3 {
-    color: black;
-    font-size: 30px;
-    padding-top: 15px;
-    text-align: center;
-    font-family: 'Roboto', georgia, monospace;
-    border: 25px solid white;
-    letter-spacing: 2px;
-    line-height: 40px;
-    margin-top: 0px;
-  }
+.first-black-column {
+  font-size: 45px;
+  background-color: black;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  display:block;
+  width: 100%;
+  height: 150px;
+  padding-top: 70px;
+  margin: 0 auto;
+}
 
-  .contact-information {
-    color: black;
-    font-size: 30px;
-    text-align: center;
-    font-family: 'Roboto', georgia, monospace;
-    border: 25px solid white;
-    letter-spacing: 2px;
-    line-height: 5px;
+.black-block-column {
+  padding-top: 40px;
+  background-color: black;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  display:block;
+  width: 100%;
+  height: 100px;
+}
 
-    /*
-    ===============================================================================
-    images
-    ==============================================================================*/
-
-    .hero-image {
-      background-image: url("../images/hero-img.jpe") no-repeat scroll center;
-      background-size: cover;
-      width: 100%;
-      height: 100%;
-    }
+h2 {
+  margin: 0px;
+  padding-top: 0px;
+  color:  white;
+  font-size: 34px;
+  text-align: center;
+  font-family: 'Roboto Slab', sans-serif, monospace;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
 
 }
 
-/*=============================================================================
-breakpoint 1024 end
-=============================================================================*/
+h3 {
+  padding: 15px 15px;
+  color: black;
+  font-size: 20px;
+  text-align: center;
+  font-family: 'Roboto', georgia, monospace;
+  border: 1px solid white;
+  letter-spacing: 1.5px;
+  line-height: 40px;
+}
+
+.who-we-are {
+  text-align: left;
+}
+
+.testimonial-button {
+border-top-left-radius: 5px;
+border-bottom-right-radius: 5px;
+background-color: rgba(69, 51, 60, 0.6);
+margin: 10px 10px;
+transition: all 0.1s ease 0.4s;
+font-size: 15px;
+}
+
+.testimonial-button:hover {
+  font-size: 25px;
+  background:-webkit-gradient(linear, 80% 20%, 10% 21%, from(#8B958C), to(#5B6765));
+  -moz-box-shadow: 4px 6px 40px #000000;
+  -webkit-box-shadow: 4px 6px 40px #000000;
+  box-shadow: 4px 6px 40px #000000;
+}
+
+
+/* images */
+
+    .about-main-img {
+      margin-top: 67px;
+      background-image: url("../images/about-main-img.jpe") no-repeat scroll center;
+      width: 100%;
+      height: auto;
+      margin: 0 auto;
+    }
+
+    .man-in-library-image {
+      display: block;
+      margin: 0 auto;
+      width: 80%;
+      height: auto;
+    }
+
+    .paper-map-image {
+      display: block;
+      margin: 0 auto;
+      width: 80%;
+      height: auto;
+    }
+
+
+    .team-meeting-image {
+      display: block;
+      margin: 0 auto;
+      width: 80%;
+      height: auto;
+    }
+
+    .heart-drawing-image {
+      display: block;
+      margin: 0 auto;
+      width: 80%;
+      height: auto;
+    }
+
+
+/*contact*/
+
+    .contact-information {
+      color: black;
+      font-size: 20px;
+      text-align: center;
+      font-family: 'Roboto', georgia, monospace;
+      border: 25px solid white;
+      letter-spacing: 1.5px;
+      line-height: 5px;
+}
