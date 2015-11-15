@@ -230,6 +230,7 @@ box-shadow: 4px 6px 40px #000000;
   clear: both;
   width: 33%
   float: right;
+  padding: 0px;
 }
 
 
@@ -289,7 +290,15 @@ span {
 
 /* contact page */
 
-
+.contact-information {
+  color: black;
+  font-size: 20px;
+  text-align: center;
+  font-family: 'Roboto', georgia, monospace;
+  border: 25px solid white;
+  letter-spacing: 1.5px;
+  line-height: 5px;
+  padding: 10px 10px;
 
 
 /*-----------------------------------------------------------------------------
@@ -298,16 +307,15 @@ span {
 
 @media all and (min-width: 720px) {
 
+
 /* main page */
 
 .hero-image {
-  margin-top: 67px;
-  background-image: url("../images/hero-img.jpe") no-repeat scroll center;
-  width: 100%;
-  height: 100%;
+    margin-top: 66px;
+    background-image: url("../images/hero-img.jpe") no-repeat scroll center;
+    width: 100%;
+    height: 100%;
 }
-
-
   .hero-main-text {
     position: absolute;
     font-size: 45px;
@@ -343,7 +351,7 @@ span {
     color: white;
     text-align: center;
     text-transform: lowercase;
-    margin-top: 320px;
+    margin-top: 250px;
     margin-left: 300px;
     border:none 15px #1a121a;
     background-color:  rgba(53, 48, 48, 0.5);
@@ -366,7 +374,7 @@ span {
 /* about */
 
 .about-main-img {
-  margin-top: 67px;
+  margin-top: 66px;
   background-image: url("../images/about-main-img.jpe") no-repeat scroll center;
   width: 100%;
   height: auto;
@@ -380,6 +388,15 @@ span {
   height: auto;
 }
 
+.contact-information {
+  color: black;
+  font-size: 20px;
+  text-align: center;
+  font-family: 'Roboto', georgia, monospace;
+  border: 25px solid white;
+  letter-spacing: 1.5px;
+  line-height: 5px;
+  padding: 15px 15px;
 }
 
 
@@ -396,7 +413,7 @@ breakpoint-1024
     background-image: url("../images/hero-img.jpe") no-repeat scroll center;
     background-size: cover;
     width: 100%;
-    height: 100%;
+    height: auto;
   }
 
   .hero-main-text {
@@ -574,4 +591,5 @@ font-size: 15px;
       border: 25px solid white;
       letter-spacing: 1.5px;
       line-height: 5px;
+      padding: 15px 15px;
 }
