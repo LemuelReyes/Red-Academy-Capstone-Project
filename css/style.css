@@ -11,10 +11,20 @@
 
 
 /*-----------------------------------------------------------------------------
-                           1.issues:
-                              had trouble figuring out @fontface.
+                           1.issues to fix:
+                              white space on 720 and 1080 breakpoints
+                              @fontface.
+                              incorporate typography em/rem
+                              style site before 420 breakpoint
+                              add content to main page to let users know what the site is about
+                              clean code
+                              hero images need to be reformatted
+
+
 -------------------------------------------------------------------------------
 */
+
+
 
 
 /*-----------------------------------------------------------------------------
@@ -94,9 +104,9 @@ a:active {
 
 .hero-image {
   margin-top: 92px;
-  background-image: url("../images/hero-img.jpe") no-repeat scroll center;
   width: 100%;
   height: 100%;
+  background-size: cover;
 }
 
 .hero-main-text {
@@ -299,7 +309,7 @@ span {
   letter-spacing: 1.5px;
   line-height: 5px;
   padding: 10px 10px;
-
+}
 
 /*-----------------------------------------------------------------------------
  3.breakpoint-720
@@ -312,9 +322,9 @@ span {
 
 .hero-image {
     margin-top: 66px;
-    background-image: url("../images/hero-img.jpe") no-repeat scroll center;
     width: 100%;
     height: 100%;
+    background-size: cover;
 }
   .hero-main-text {
     position: absolute;
@@ -351,7 +361,7 @@ span {
     color: white;
     text-align: center;
     text-transform: lowercase;
-    margin-top: 250px;
+    margin-top: 310px;
     margin-left: 300px;
     border:none 15px #1a121a;
     background-color:  rgba(53, 48, 48, 0.5);
@@ -410,7 +420,6 @@ breakpoint-1024
 
   .hero-image {
     margin-top: 67px;
-    background-image: url("../images/hero-img.jpe") no-repeat scroll center;
     background-size: cover;
     width: 100%;
     height: auto;
