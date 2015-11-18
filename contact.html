@@ -16,14 +16,14 @@
   <meta name="keywords" content="vancouver, immigration consulting, consultation,
   consultant, agency, help, best" />
   <meta name="viewport" content="width=device-width, initial-scale=1">
-
+  <script src="js/jquery-2.1.4.min.js"></script>
 </head>
 
 <body>
 
   <header>
 
-    <h1 class="header-title">Filmex Immigration Consulting Agency</h1>
+    <h1 class="header-title">Filmex Immigration</h1>
     <nav>
       <ul style="list-style-type:none">
         <li><a href="index.html">main</a></li>
@@ -50,6 +50,81 @@ alt="filmex immigration's office location" title="office-location" class="office
     Street. Contact us for an appointment or consultation.</div>
   </p>
 </h3>
+
+<div="contact-form-background">
+<!--
+ <p class="form-title">Request a quotation</p><br/> <br/>
+<p class="form-title-sub">Let's work together</p> -->
+
+<div class="form">
+
+  <form action="#" method="post" id="contact-form">
+    <label for="name"><p class="fill-info">Name</p> </label>
+    <br />
+    <br />
+
+    <input type="text" name="name" size="10" maxlength="10" id="name" placeholder="Name" />
+    <br/>
+    <br/>
+
+    <label for="application"><p="fill-info">Type of application</p> </label>
+    <br />
+    <br />
+
+    <select id="application">
+      <option value="Choose"  selected="selected">
+      - Choose -
+      </option>
+
+      <option value="Work Permit">
+      Work Permit
+      </option>
+
+      <option value="Federal Skilled Worker">
+      Federal Skilled Worker
+      </option>
+
+      <option value="Spousal sponsorship">Spousal Sponsorship
+      </option>
+
+      <option value="Provincial Nominee Program">Provincial Nominee
+      </option>
+
+      <option value="Tourist Visa">Tourist Visa</option>
+    </select>
+    <br />
+    <br />
+
+
+
+    <label for='uploaded-file'>
+      <p class="fill-info">Upload resume:
+      </p>
+      </label>
+    <br/><br/>
+    <input type="file" name="uploaded_file">
+    <br/><br/>
+
+    <label for="message">
+      <p class="fill-info">
+        Message
+      </p>
+    </label>
+    <br />
+    <br/>
+
+    <textarea name="message" id="Message" placeholder="Message"></textarea>
+    <br />
+    <br />
+
+    <button type="submit">Submit</button>
+
+  </form>
+</div>
+
+</div>
+
+
 
 <a id="contact-info">
   <h2>
