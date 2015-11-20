@@ -36,7 +36,17 @@
     font-style: normal;
 }
 
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
 
+.clearfix:before{
+  content: "";
+  display: table;
+  clear: both;
+}
 
 /*-----------------------------------------------------------------------------
 2.breakpoint-480
@@ -44,7 +54,6 @@
 */
 
 @media all and (min-width: 480px) {
-
 
 
 /* ======== main page =========*/
@@ -70,7 +79,7 @@ header {
   text-align: center;
   font-size: 30px;
   color: rgba(248, 255, 255, 0.9);
-  font-weight: bold;s
+  font-weight: bold;
   font-family:  'robotobold',sans-serif, monospace;
   text-transform: uppercase;
   margin-top: 80px;
@@ -245,7 +254,7 @@ box-shadow: 4px 6px 40px #000000;
 }
 
 
-.location-description:after {
+.location-description {
   content: "";
   display: table;
   clear: both;
@@ -267,13 +276,6 @@ span {
 #ICCRC-link {
   text-color: black;
 }
-
-.clearfix:after {
-    content: "";
-    display: table;
-    clear: both;
-}
-
 
 /* index.html images */
 .man-in-library-image {
@@ -482,7 +484,6 @@ input:focus, textarea:focus, label:focus {
   height: auto;
 }
 
-/*
 .form-title {
   color: black;
   font-size: 25px;
@@ -490,16 +491,8 @@ input:focus, textarea:focus, label:focus {
   font-family: 'Roboto', georgia, monospace;
   letter-spacing: 1.5px;
   margin:auto;
+  text-decoration: underline;
 }
-
-.form-title-sub {
-  color: black;
-  font-size: 15px;
-  text-align: left;
-  font-family: 'Roboto', georgia, monospace;
-  letter-spacing: 1.5px;
-}
-*/
 
 form {
 transition: all 2s ease;
@@ -533,6 +526,7 @@ letter-spacing: 0.5px;
 
 form {
   margin-bottom: 30px;
+  padding-bottom: 20px;
 }
 
 input { border-radius: 5px;
@@ -558,7 +552,7 @@ input:focus, textarea:focus {
   font-size: 20px;
 }
 
-
+}
 
 /*-----------------------------------------------------------------------------
  3.breakpoint-720

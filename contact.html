@@ -21,18 +21,16 @@
 
 <body>
 
-  <header>
-
-    <h1 class="header-title">Filmex Immigration</h1>
-    <nav>
-      <ul style="list-style-type:none">
-        <li><a href="index.html">main</a></li>
-        <li><a href="about.html">about</a></li>
-        <li><a href="contact.html">contact</a></li>
-      </ul>
-    </nav>
+  <header class="clearfix">
+    <h1 class="header-title">Filmex Immigration </h1>
+      <nav>
+        <ul style="list-style-type:none">
+          <li><a href="index.html">main</a></li>
+          <li><a href="about.html">about</a></li>
+          <li><a href="contact.html">contact</a></li>
+        </ul>
+      </nav>
   </header>
-
 
 
 <img src="https://www.google.ca/maps/vt/data=RfCSdfNZ0LFPrHSm0ublXdzhdrDFhtmHhN1u-gM,Ru9Yb8Bb44c5ejonNJL78usgdJW1eo1yxoQ_BDfPfOrWs6AE7QBIrmOrj9Iz-Gt2wiF7qPPp7TGc7SW5sTZIqIYSVzGLE_jW_O2kEpaDGnjvq6L4_3NdTLOnq_U"
@@ -52,14 +50,16 @@ alt="filmex immigration's office location" title="office-location" class="office
 </h3>
 
 <div="contact-form-background">
-<!--
- <p class="form-title">Request a quotation</p><br/> <br/>
-<p class="form-title-sub">Let's work together</p> -->
+<p class="form-title">Request a quotation</p><br/> <br/>
+</div>
 
-<div class="form">
+<!-- FORM STARTS / MESSAGE AREA NEED TO BE FORMATTED TO FIT-->
 
-  <form action="#" method="post" id="contact-form">
-    <label for="name"><p class="fill-info">Name</p> </label>
+<form action="#" method="post" id="contact-form">
+    <label for="name">
+      <p class="fill-info">Name</p>
+    </label>
+
     <br />
     <br />
 
@@ -67,50 +67,93 @@ alt="filmex immigration's office location" title="office-location" class="office
     <br/>
     <br/>
 
-    <label for="application"><p="fill-info">Type of application</p> </label>
+  <div class="application-options">
+    <label for="application">
+      <p class="fill-info">Type of application</p>
+    </label>
+
     <br />
     <br />
 
-    <select id="application">
-      <option value="Choose"  selected="selected">
+    <select id="type-of-application">
+
+      <option value="choose" selected="selected">
       - Choose -
       </option>
 
-      <option value="Work Permit">
-      Work Permit
+      <option value="spousal-sponsorship">
+        Spousal Sponsorship
       </option>
 
-      <option value="Federal Skilled Worker">
-      Federal Skilled Worker
+      <option value="work-permit">
+        Work Permit
       </option>
 
-      <option value="Spousal sponsorship">Spousal Sponsorship
+      <option value="federal-skilled-worker">
+        Federal Skilled Worker
       </option>
 
-      <option value="Provincial Nominee Program">Provincial Nominee
+      <option value="provincial-nominee-program">
+        Provincial Nominee
       </option>
 
-      <option value="Tourist Visa">Tourist Visa</option>
+      <option value="tourist-visa">
+        Tourist Visa
+      </option>
+
+  </select>
+  </div> <!-- ends application-options div -->
+
+  <br/>
+
+  <!-- when user chooses Spousal Sponsorship Program, the div below will activate (more specifically the partner gender option will pop out) -->
+
+  <div id="spousal-gender-option">
+
+       <label for="partner-gender">Spouse's gender</label> <br/><br/>
+    <select id="partner-gender">
+      <option value="" selected="selected">- Choose -</option>
+      <option value="male">male</option>
+      <option value="female">female</option>
     </select>
-    <br />
-    <br />
 
+  </div> <!-- ends spousal sponsorship application div -->
 
+  <br/>
+    <br/>
+
+  <div id="marriage-duration">
+    <label for="marriage-duration">Duration of marriage</label><br/><br/>
+    <select id="marriage-duration">
+      <option value="" selected="selected"> - Choose -</option>
+      <option value="less-than-1-year">less than 1 year</option>
+      <option value="1-5-years">1-5 years</option>
+      <option value="more-than-5">stage: shes poisoning my food</option>
+    </select>
+  </div> <!-- ends marriage duration div -->
+
+    <br />
 
     <label for='uploaded-file'>
-      <p class="fill-info">Upload resume:
+      <p class="fill-info">
+        Upload resume:
       </p>
-      </label>
-    <br/><br/>
+    </label>
+
+    <br/>
+
     <input type="file" name="uploaded_file">
-    <br/><br/>
+
+    <br/>
+    <br/>
 
     <label for="message">
       <p class="fill-info">
         Message
       </p>
     </label>
-    <br />
+
+    <br/>
     <br/>
 
     <textarea name="message" id="Message" placeholder="Message"></textarea>
@@ -120,9 +163,7 @@ alt="filmex immigration's office location" title="office-location" class="office
     <button type="submit">Submit</button>
 
   </form>
-</div>
 
-</div>
 
 
 
@@ -147,4 +188,7 @@ alt="filmex immigration's office location" title="office-location" class="office
 
 </h3>
 
+<footer>
+<script src="js/jquery-2.1.4.min.js"></script>
+</footer>
 </body>
