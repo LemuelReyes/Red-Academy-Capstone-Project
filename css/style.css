@@ -13,22 +13,26 @@
 /*-----------------------------------------------------------------------------
                            1.issues to fix:
                                PRIORITIES
-                            * navigation is not working.
+                            *** navigation is not working.
                             1.  LEARN ABOUT AND INCORPORATE EM / REM
-                            3. STYLE SITE AFTER 1080 BREAKPOINT
-                            4. PHOTOSHOP IMAGES TO GREY
-                            5. CLEAN CODE
-                            6. TEST SITE
-                            7. DEBUG
-                            8. cut down code that repeats and repeats
+                            2. PHOTOSHOP IMAGES TO GREY
+                            3. CLEAN CODE
+                            4. TEST SITE
+                            5. DEBUG
+                            6. cut down code that repeats and repeats
+                            7. style post 1080 / desktop version
 
                             PRE-480 breakpoint issues
                             1. NAV DISAPPEARS AND FORM INPUT BOXES GO BEYOND THEIR container
                             2. LOGOS DO NOT SCALE SIDE BY SIDE, WHEN THE SCREEN IS SMALL ENOUGH THEY DONT SCALE IN SIZE
-                            3. WHEN I CHANGE HEIGHT OR CHOOSE DIFFERENT DEVICES, NAV DISAPPEARS.
+                            3. WHEN I CHANGE HEIGHT OR CHOOSE DIFFERENT DEVICES IN INSPECTOR TOOLS, NAV DISAPPEARS.
 
                             720 breakpoint issues
                             1. hero sub text is not scaling and does not move when breakpoint is scaling up. making it look weird.
+
+                            1080 issues
+                            1.the only issue 1080 and beyond would probably the scaling images. they would get too big.
+
 -------------------------------------------------------------------------------
 */
 
@@ -1411,12 +1415,12 @@ filmex-logo {
 
 .big-paragraph {
   color: black;
-  font-size: 15px;
+  font-size: 20px;
   text-align: left;
   font-family: 'Roboto', georgia, monospace;
   border: 1px solid white;
   letter-spacing: 1.5px;
-  line-height: 25px;
+  line-height: 30px;
 }
 
 /* contact page */
