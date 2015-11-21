@@ -13,19 +13,22 @@
 /*-----------------------------------------------------------------------------
                            1.issues to fix:
                                PRIORITIES
-
+                            * navigation is not working.
                             1.  LEARN ABOUT AND INCORPORATE EM / REM
                             3. STYLE SITE AFTER 1080 BREAKPOINT
                             4. PHOTOSHOP IMAGES TO GREY
                             5. CLEAN CODE
                             6. TEST SITE
                             7. DEBUG
-
+                            8. cut down code that repeats and repeats
 
                             PRE-480 breakpoint issues
                             1. NAV DISAPPEARS AND FORM INPUT BOXES GO BEYOND THEIR container
                             2. LOGOS DO NOT SCALE SIDE BY SIDE, WHEN THE SCREEN IS SMALL ENOUGH THEY DONT SCALE IN SIZE
                             3. WHEN I CHANGE HEIGHT OR CHOOSE DIFFERENT DEVICES, NAV DISAPPEARS.
+
+                            720 breakpoint issues
+                            1. hero sub text is not scaling and does not move when breakpoint is scaling up. making it look weird.
 -------------------------------------------------------------------------------
 */
 
@@ -1613,43 +1616,42 @@ breakpoint-1024
   }
 
   header {
-    position:absolute;
+    position: absolute;
     text-align: center;
     margin: 0px;
-    background-image: linear-gradient(
+    /* background-image: linear-gradient(
       to right, rgba(53, 48, 44, 1) 0%, rgba(53, 48, 48, 0.9) 33%,
-      rgba(53, 48, 48, 0.6) 66%, rgba(53, 48, 48, 0.3) 100%);
+      rgba(53, 48, 48, 0.6) 66%, rgba(53, 48, 48, 0.3) 100%);*/
+      background-color: black;
     width: 100%;
+    height: 20%;
   }
 
   .header-title {
-    width: 33%;
-    float:left;
-    font-size: 25px;
+    text-align: center;
+    font-size: 45px;
     color: rgba(248, 255, 255, 0.9);
     font-weight: bold;
     font-family:  'robotobold',sans-serif, monospace;
-    letter-spacing: 0.5px;
     text-transform: uppercase;
-    margin: 0;
-    padding-top: 10px;
-    padding-left: 5px;
-    padding-bottom: 5px;
+    margin-top: 80px;
+    margin-bottom: 0px;
+    letter-spacing: 3px;
   }
+
 
   /* nav and link appearance */
 
   nav {
     font-size: 15px;
     color: rgba(248, 255, 255, 0.9);
-    border-top: 0px;
     letter-spacing: 0.5px;
     text-transform: uppercase;
     font-family:  'Roboto:100', sans-serif;, sans-serif, monospace;
-    width: 66%;
-    float:right;
-    padding-top: 90px;
-    position: absolute;
+    padding-top: 0px;
+    padding-right: 40px;
+    padding-bottom: 10px;
+    text-align: center;
   }
 
   li {
@@ -1658,84 +1660,104 @@ breakpoint-1024
     display: inline-block;
   }
 
-
-  /* main page */
-
-  .hero-image {
-    margin-top: 67px;
-    background-size: cover;
-    width: 100%;
-    height: auto;
+  a:link  {
+    color: rgba(248, 255, 255, 0.9);
+    text-decoration:none;
   }
 
-  .hero-main-text {
-    position: absolute;
-    font-size: 60px;
-    font-family: 'Roboto Slab', sans-serif, monospace;
-    letter-spacing: 0.5px;
+  a:visited {
+    color: rgba(248, 255, 255, 0.9);
+  }
+
+  a:hover {
     color: white;
-    text-align: center;
-    text-transform: uppercase;
-    margin-top: 270px;
-    margin-left: 100px;
-    background-color:  rgba(53, 48, 48, 0.5);
-    border:none 15px;
-    -moz-border-radius-topleft: 50px;
-    -moz-border-radius-topright:0px;
-    -moz-border-radius-bottomleft:0px;
-    -moz-border-radius-bottomright:51px;
-    -webkit-border-top-left-radius:50px;
-    -webkit-border-top-right-radius:0px;
-    -webkit-border-bottom-left-radius:0px;
-    -webkit-border-bottom-right-radius:51px;
-    border-top-left-radius:50px;
-    border-top-right-radius:0px;
-    border-bottom-left-radius:0px;
-    border-bottom-right-radius:51px;
   }
 
-  .hero-sub-text {
-    position: absolute;
-    font-size: 25px;
-    font-family: 'Roboto Slab', sans-serif, monospace;
-    letter-spacing: 0.5px;
+  a:active {
     color: white;
-    text-align: center;
-    text-transform: lowercase;
-    margin-top: 348px;
-    margin-left: 450px;
-    border:none 15px #1a121a;
-    background-color:  rgba(53, 48, 48, 0.5);
-    border:none 7px #1a121a;
-  -moz-border-radius-topleft: 0px;
-  -moz-border-radius-topright:24px;
-  -moz-border-radius-bottomleft:29px;
-  -moz-border-radius-bottomright:0px;
-  -webkit-border-top-left-radius:0px;
-  -webkit-border-top-right-radius:24px;
-  -webkit-border-bottom-left-radius:29px;
-  -webkit-border-bottom-right-radius:0px;
-  border-top-left-radius:0px;
-  border-top-right-radius:24px;
-  border-bottom-left-radius:29px;
-  border-bottom-right-radius:0px;
   }
 
-/* about */
 
 
-/*text*/
+/* main page */
+
+.hero-image {
+  width: 100%;
+  height: auto;
+  padding-top: 205px;
+  position: relative;
+}
+
+.hero-main-text {
+  position: absolute;
+  margin-top: 450px;
+  margin-left: 140px;
+  font-size: 45px;
+  font-family: 'robotobold', sans-serif, monospace;
+  letter-spacing: 1px;
+  text-align: center;
+  text-transform: uppercase;
+  color: white;
+  z-index: 1;
+  background-color:  rgba(53, 48, 48, 0.5);
+  border:none 15px;
+  -moz-border-radius-topleft: 10px;
+  -moz-border-radius-topright:0px;
+  -moz-border-radius-bottomleft:0px;
+  -moz-border-radius-bottomright:5px;
+  -webkit-border-top-left-radius:10px;
+  -webkit-border-top-right-radius:0px;
+  -webkit-border-bottom-left-radius:0px;
+  -webkit-border-bottom-right-radius:5px;
+  border-top-left-radius:10px;
+  border-top-right-radius:0px;
+  border-bottom-left-radius:0px;
+  border-bottom-right-radius:5px;
+}
+
+.hero-sub-text {
+  position: absolute;
+  margin-top: 573px;
+  margin-left: 600px;
+  font-size: 35px;
+  font-family: 'Roboto Slab', sans-serif, monospace;
+  letter-spacing: 0.5px;
+  text-align: center;
+  text-transform: lowercase;
+  color: white;
+  z-index: 1;
+  border:none 15px #1a121a;
+  background-color:  rgba(53, 48, 48, 0.5);
+  border:none 7px #1a121a;
+-moz-border-radius-topleft: 0px;
+-moz-border-radius-topright:24px;
+-moz-border-radius-bottomleft:29px;
+-moz-border-radius-bottomright:0px;
+-webkit-border-top-left-radius:0px;
+-webkit-border-top-right-radius:24px;
+-webkit-border-bottom-left-radius:29px;
+-webkit-border-bottom-right-radius:0px;
+border-top-left-radius:0px;
+border-top-right-radius:24px;
+border-bottom-left-radius:29px;
+border-bottom-right-radius:0px;
+
+
+}
+
+/* index.html page */
+
+/* text */
 
 .first-black-column {
-  font-size: 45px;
+  border-top: 5px black solid;
   background-color: black;
   background-repeat: no-repeat;
   background-attachment: fixed;
   display:block;
   width: 100%;
   height: 150px;
-  padding-top: 70px;
-  margin: 0 auto;
+  margin: 0px;
 }
 
 .black-block-column {
@@ -1761,7 +1783,6 @@ h2 {
 }
 
 h3 {
-  padding: 15px 15px;
   color: black;
   font-size: 20px;
   text-align: center;
@@ -1775,73 +1796,348 @@ h3 {
   text-align: left;
 }
 
+
 .testimonial-button {
 border-top-left-radius: 5px;
 border-bottom-right-radius: 5px;
-background-color: rgba(69, 51, 60, 0.6);
-margin: 10px 10px;
-transition: all 0.1s ease 0.4s;
-font-size: 15px;
+max-width: 80%
+text-align: center;
+font-size: 25px;
+margin:auto;
+background:-webkit-gradient(linear, 80% 20%, 10% 21%, from(#8B958C), to(#5B6765));
+-moz-box-shadow: 4px 6px 40px #000000;
+-webkit-box-shadow: 4px 6px 40px #000000;
+box-shadow: 4px 6px 40px #000000;
 }
 
-.testimonial-button:hover {
+
+.location-description {
+  content: "";
+  display: table;
+  clear: both;
+  width: 33%
+  float: right;
+  padding: 0px;
+}
+
+
+/* directions, email, links are wrapped in span*/
+
+span {
+  background-color: black;
+  color: white;
+}
+
+/* link for ICCRC */
+
+#ICCRC-link {
+  text-color: black;
+}
+
+/* index.html images */
+.man-in-library-image {
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+
+}
+
+.paper-map-image {
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+}
+
+
+.team-meeting-image {
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.heart-drawing-image {
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+}
+
+/* about.html images */
+
+.cufflink-img {
+  display: block;
+  width: 100%;
+  height: auto;
+  padding-top: 205px;
+  position: relative;
+}
+
+.suit-img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.book-img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+/*logos*/
+
+.container {
+  display: inline-block;
+}
+
+.capic-logo {
+  height:auto;
+  width: 33%;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 30px;
+}
+
+.iccrc-logo {
+  height:auto;
+  width: 33%;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+filmex-logo {
+  height: auto;
+  width: 33%;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+
+/* about.html text */
+
+.quote-column {
+  background-color: black;
+  display:block;
+  width: 100%;
+  height: auto;
+}
+
+.quote-column-content {
+  margin: 0px;
+  padding-top: 0px;
+  color:  white;
   font-size: 25px;
-  background:-webkit-gradient(linear, 80% 20%, 10% 21%, from(#8B958C), to(#5B6765));
-  -moz-box-shadow: 4px 6px 40px #000000;
-  -webkit-box-shadow: 4px 6px 40px #000000;
-  box-shadow: 4px 6px 40px #000000;
+  text-align: center;
+  font-family: 'Roboto Slab', sans-serif, monospace;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+}
+
+/* distinguishes first line of text and emphasizes it*/
+
+.lead-text {
+  color: black;
+  font-size: 25px;
+  text-align: center;
+  font-family: 'Roboto', georgia, monospace;
+  letter-spacing: 1.5px;
+}
+
+/* to be used for big parapgraphs that need to be readable */
+
+.big-paragraph {
+  color: black;
+  font-size: 25px;
+  text-align: left;
+  font-family: 'Roboto', georgia, monospace;
+  border: 1px solid white;
+  letter-spacing: 1.5px;
+  line-height: 30px;
+}
+
+/* contact page */
+
+.office-location {
+
+  width: 100%;
+  height: auto;
+  padding-top: 205px;
+  position: relative;
+}
+
+form {
+transition: all 2s ease;
+background-image: linear-gradient(
+      to right, rgba(53, 48, 44, 1) 0%, rgba(53, 48, 48, 0.9) 33%,
+      rgba(53, 48, 48, 0.6) 66%, rgba(53, 48, 48, 0.3) 100%);
+padding: 20px;
+border-radius: 10px;
+text-align: left;
+width: 30%;
+box-shadow: inset 0px -3px 1px rgba(0, 0, 0, 0.45),
+0px 2px 2px rgba(0, 0, 0, 0.25);
+}
+
+form:hover {
+background-image: linear-gradient(
+      to right, rgba(53, 48, 44, 1) 0%, rgba(53, 48, 48, 0.9) 33%,
+      rgba(53, 48, 48, 0.6) 66%, rgba(53, 48, 48, 1) 100%);
+background-color: grey;
+padding: 50px;
+border-radius: 10px;
+text-align: left;
+width: 35%;
+height: auto;
+box-shadow: 5px rgba (0, 0, 0, 1);
+text-transform: uppercase;
+letter-spacing: 0.5px;
+}
+
+input { border-radius: 5px;
+}
+
+input[type="text"],
+input[type="search"] {
+   color: #111;
+   font-family: Helvetica, sans-serif;
+   padding: 2px 5px;
+}
+
+button { background-color: white;
+border-radius: 5px;
+}
+
+button:hover { color: hsla(0, 0%, 25%, 1);
+}
+
+button:active { color: green;
+}
+
+input:focus, textarea:focus, label:focus {
+   background: grey;
+   max-width: 200px;
+}
+
+.fill-info {
+  color: white;
+  font-size: 20px;
+}
+
+.contact-information {
+  color: black;
+  font-size: 20px;
+  text-align: center;
+  font-family: 'Roboto', georgia, monospace;
+  border: 25px solid white;
+  letter-spacing: 1.5px;
+  line-height: 5px;
+  padding: 10px 10px;
+}
+
+/* form */
+.contact-form-background {
+  background-color: black;
+  display:block;
+  width: 100%;
+  height: auto;
+}
+
+.form-title {
+  color: black;
+  font-size: 25px;
+  text-align: center;
+  font-family: 'Roboto', georgia, monospace;
+  letter-spacing: 1.5px;
+  margin:auto;
+  text-decoration: underline;
+}
+
+form {
+transition: all 2s ease;
+background-image: linear-gradient(
+      to right, rgba(53, 48, 44, 1) 0%, rgba(53, 48, 48, 0.9) 33%,
+      rgba(53, 48, 48, 0.6) 66%, rgba(53, 48, 48, 0.3) 100%);
+padding: 20px;
+margin: auto;
+border-radius: 10px;
+text-align: left;
+width: 30%;
+box-shadow: inset 0px -3px 1px rgba(0, 0, 0, 0.45),
+0px 2px 2px rgba(0, 0, 0, 0.25);
+
+}
+
+form:hover {
+background-image: linear-gradient(
+      to right, rgba(53, 48, 44, 1) 0%, rgba(53, 48, 48, 0.9) 33%,
+      rgba(53, 48, 48, 0.6) 66%, rgba(53, 48, 48, 1) 100%);
+background-color: grey;
+padding: 50px;
+border-radius: 10px;
+text-align: left;
+width: 35%;
+height: auto;
+box-shadow: 5px rgba (0, 0, 0, 1);
+text-transform: uppercase;
+letter-spacing: 0.5px;
+}
+
+form {
+  margin-bottom: 30px;
+  padding-bottom: 20px;
+}
+
+input { border-radius: 5px;
+}
+
+button { background-color: white;
+border-radius: 5px;
+}
+
+button:hover { color: hsla(0, 0%, 25%, 1);
+}
+
+button:active { color: green;
+}
+
+input:focus, textarea:focus {
+   background: grey;
+   max-width: 120px;
+}
+
+.fill-info {
+  color: white;
+  font-size: 20px;
+}
+
 }
 
 
-/* images */
+/* about */
 
-    .about-main-img {
-      margin-top: 67px;
-      background-image: url("../images/about-main-img.jpe") no-repeat scroll center;
-      width: 100%;
-      height: auto;
-      margin: 0 auto;
-    }
+.about-main-img {
+  margin-top: 156px;
+  background-image: url("../images/about-main-img.jpe") no-repeat scroll center;
+  width: 100%;
+  height: auto;
+}
 
-    .man-in-library-image {
-      display: block;
-      margin: 0 auto;
-      width: 80%;
-      height: auto;
-    }
+/* contact */
 
-    .paper-map-image {
-      display: block;
-      margin: 0 auto;
-      width: 80%;
-      height: auto;
-    }
+.office-location {
+  position: relative;
+  width: 100%;
+  height: auto;
+}
 
+.contact-information {
+  color: black;
+  font-size: 20px;
+  text-align: center;
+  font-family: 'Roboto', georgia, monospace;
+  border: 25px solid white;
+  letter-spacing: 1.5px;
+  line-height: 5px;
+  padding: 15px 15px;
+}
 
-    .team-meeting-image {
-      display: block;
-      margin: 0 auto;
-      width: 80%;
-      height: auto;
-    }
-
-    .heart-drawing-image {
-      display: block;
-      margin: 0 auto;
-      width: 80%;
-      height: auto;
-    }
-
-
-/*contact*/
-
-    .contact-information {
-      color: black;
-      font-size: 20px;
-      text-align: center;
-      font-family: 'Roboto', georgia, monospace;
-      border: 25px solid white;
-      letter-spacing: 1.5px;
-      line-height: 5px;
-      padding: 15px 15px;
 }
