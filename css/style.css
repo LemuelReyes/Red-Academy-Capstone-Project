@@ -64,7 +64,7 @@ overflow: hidden;
 
   .header-title {
     text-align: center;
-    font-size: 21px;
+    font-size: 1.5em;
     color: rgba(248, 255, 255, 0.9);
     font-weight: bold;
     font-family:  'robotobold',sans-serif, monospace;
@@ -77,7 +77,7 @@ overflow: hidden;
   /* nav and link appearance */
 
   nav {
-    font-size: 15px;
+    font-size: 1em;
     color: rgba(248, 255, 255, 0.9);
     letter-spacing: 0.5px;
     text-transform: uppercase;
@@ -120,7 +120,7 @@ overflow: hidden;
   .hero-image {
     width: 100%;
     height: auto;
-    padding-top: 205px;
+    padding-top: 188px;
     position: relative;
   }
 
@@ -129,7 +129,7 @@ overflow: hidden;
     width: 70%;
     margin-top: 300px;
     margin-left: 50px;
-    font-size: 20spx;
+    font-size: 1em;
     font-family: 'robotobold', sans-serif, monospace;
     letter-spacing: 1px;
     text-align: center;
@@ -156,7 +156,7 @@ overflow: hidden;
     position: absolute;
     margin-top: 350px;
     margin-left: 230px;
-    font-size: 15px;
+    font-size: 1em;
     font-family: 'Roboto Slab', sans-serif, monospace;
     letter-spacing: 0.5px;
     text-align: center;
@@ -185,16 +185,14 @@ overflow: hidden;
 
   /* text */
 
-  .first-black-column {
-    border-top: 5px black solid;
+  /*.first-black-column {
     background-color: black;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
     display:block;
     width: 100%;
     height: 150px;
-    margin: 0px;
-  }
+    margin:auto;
+    color: white;
+  } */
 
   .black-block-column {
     padding-top: 40px;
@@ -210,7 +208,7 @@ overflow: hidden;
     margin: auto;
     padding-top: 0px;
     color:  white;
-    font-size: 25px;
+    font-size: 1.5em;
     text-align: center;
     font-family: 'Roboto Slab', sans-serif, monospace;
     letter-spacing: 0.5px;
@@ -226,6 +224,7 @@ overflow: hidden;
     border: 1px solid white;
     letter-spacing: 1.5px;
     line-height: 30px;
+    margin: 1.5em 2em;
   }
 
   .who-we-are {
@@ -236,24 +235,21 @@ overflow: hidden;
   .testimonial-button {
   border-top-left-radius: 5px;
   border-bottom-right-radius: 5px;
-  max-width: 80%;
   text-align: center;
-  font-size: 15px;
-  margin: auto;
+  font-size: 1em;
+  margin-right: 30px;
+  width: auto;
+  padding-right: 20px;
   background:-webkit-gradient(linear, 80% 20%, 10% 21%, from(#8B958C), to(#5B6765));
-  -moz-box-shadow: 4px 6px 40px #000000;
-  -webkit-box-shadow: 4px 6px 40px #000000;
-  box-shadow: 4px 6px 40px #000000;
   }
 
 
   .location-description {
-    content: "";
-    display: table;
-    clear: both;
-    width: 33%
-    float: right;
+    width: 100%
+    height: auto;
     padding: 0px;
+    margin: auto;
+    position: relative;
   }
 
 
@@ -303,7 +299,7 @@ overflow: hidden;
     display: block;
     width: 100%;
     height: auto;
-    padding-top: 205px;
+    padding-top: 188px;
     position: relative;
   }
 
@@ -396,7 +392,7 @@ overflow: hidden;
 
     width: 100%;
     height: auto;
-    padding-top: 205px;
+    padding-top: 190px;
     position: relative;
   }
 
@@ -465,7 +461,7 @@ overflow: hidden;
     font-family: 'Roboto', georgia, monospace;
     border: 25px solid white;
     letter-spacing: 1.5px;
-    line-height: 5px;
+    line-height: 1.5em;
     padding: 10px 10px;
   }
 
@@ -496,7 +492,7 @@ overflow: hidden;
   margin: auto;
   border-radius: 10px;
   text-align: left;
-  width: 30%;
+  width: 55%;
   box-shadow: inset 0px -3px 1px rgba(0, 0, 0, 0.45),
   0px 2px 2px rgba(0, 0, 0, 0.25);
 
@@ -510,7 +506,7 @@ overflow: hidden;
   padding: 50px;
   border-radius: 10px;
   text-align: left;
-  width: 35%;
+  width: 74%;
   height: auto;
   box-shadow: 5px rgba (0, 0, 0, 1);
   text-transform: uppercase;
