@@ -32,166 +32,167 @@
       </nav>
   </header>
 
+<div class="page-content">
+  <img src="https://www.google.ca/maps/vt/data=RfCSdfNZ0LFPrHSm0ublXdzhdrDFhtmHhN1u-gM,Ru9Yb8Bb44c5ejonNJL78usgdJW1eo1yxoQ_BDfPfOrWs6AE7QBIrmOrj9Iz-Gt2wiF7qPPp7TGc7SW5sTZIqIYSVzGLE_jW_O2kEpaDGnjvq6L4_3NdTLOnq_U"
+  alt="filmex immigration's office location" title="office-location" class="office-location" width="100%" height="300" />
 
-<img src="https://www.google.ca/maps/vt/data=RfCSdfNZ0LFPrHSm0ublXdzhdrDFhtmHhN1u-gM,Ru9Yb8Bb44c5ejonNJL78usgdJW1eo1yxoQ_BDfPfOrWs6AE7QBIrmOrj9Iz-Gt2wiF7qPPp7TGc7SW5sTZIqIYSVzGLE_jW_O2kEpaDGnjvq6L4_3NdTLOnq_U"
-alt="filmex immigration's office location" title="office-location" class="office-location" width="100%" height="300" />
+  <h3>
+    <div class="location-description">
+      <p>We're located on the third floor of one of the many <em>Heritage buildings</em> of Vancouver.
+      The <em>Seymour building</em> at 309-525 Seymour St
+      (click for <a href="https://www.google.ca/maps/dir//525+Seymour+St,+Vancouver,+BC+V6B+3H6/@49.2837745,-123.1168638,17z/data=!4m13!1m4!3m3!1s0x54867178c0a64081:0x8e12ea3413bd6653!2s525+Seymour+St,+Vancouver,+BC+V6B+3H6!3b1!4m7!1m0!1m5!1m1!1s0x54867178c0a64081:0x8e12ea3413bd6653!2m2!1d-123.1146751!2d49.2837745" target="_blank">
+        <em>
+          <span>directions</span>
+          </em>)</a>
+        - a few blocks up from Seymour and West Pender
+      Street. Contact us for an appointment or consultation.</div>
+    </p>
+  </h3>
 
-<h3>
-  <div class="location-description">
-    <p>We're located on the third floor of one of the many <em>Heritage buildings</em> of Vancouver.
-    The <em>Seymour building</em> at 309-525 Seymour St
-    (click for <a href="https://www.google.ca/maps/dir//525+Seymour+St,+Vancouver,+BC+V6B+3H6/@49.2837745,-123.1168638,17z/data=!4m13!1m4!3m3!1s0x54867178c0a64081:0x8e12ea3413bd6653!2s525+Seymour+St,+Vancouver,+BC+V6B+3H6!3b1!4m7!1m0!1m5!1m1!1s0x54867178c0a64081:0x8e12ea3413bd6653!2m2!1d-123.1146751!2d49.2837745" target="_blank">
-      <em>
-        <span>directions</span>
-        </em>)</a>
-      - a few blocks up from Seymour and West Pender
-    Street. Contact us for an appointment or consultation.</div>
-  </p>
-</h3>
+  <div="contact-form-background">
+  <p class="form-title">Request a quotation</p><br/> <br/>
+  </div>
 
-<div="contact-form-background">
-<p class="form-title">Request a quotation</p><br/> <br/>
+  <!-- FORM STARTS / MESSAGE AREA NEED TO BE FORMATTED TO FIT-->
+
+  <form action="#" method="post" id="contact-form">
+      <label for="name">
+        <p class="fill-info">Name</p>
+      </label>
+
+      <br />
+      <br />
+
+      <input type="text" name="name" size="10" maxlength="10" id="name" placeholder="Name" />
+      <br/>
+      <br/>
+
+    <div class="application-options">
+      <label for="application">
+        <p class="fill-info">Type of application</p>
+      </label>
+
+      <br />
+      <br />
+
+      <select id="type-of-application">
+
+        <option value="choose" selected="selected">
+        - Choose -
+        </option>
+
+        <option value="spousal-sponsorship">
+          Spousal Sponsorship
+        </option>
+
+        <option value="work-permit">
+          Work Permit
+        </option>
+
+        <option value="federal-skilled-worker">
+          Federal Skilled Worker
+        </option>
+
+        <option value="provincial-nominee-program">
+          Provincial Nominee
+        </option>
+
+        <option value="tourist-visa">
+          Tourist Visa
+        </option>
+
+    </select>
+    </div> <!-- ends application-options div -->
+
+    <br/>
+
+    <!-- when user chooses Spousal Sponsorship Program, the div below will activate (more specifically the partner gender option will pop out) -->
+
+    <div id="spousal-gender-option">
+
+         <label for="partner-gender">Spouse's gender</label> <br/><br/>
+      <select id="partner-gender">
+        <option value="" selected="selected">- Choose -</option>
+        <option value="male">male</option>
+        <option value="female">female</option>
+      </select>
+
+    </div> <!-- ends spousal sponsorship application div -->
+
+    <br/>
+      <br/>
+
+    <div id="marriage-duration">
+      <label for="marriage-duration">Duration of marriage</label><br/><br/>
+      <select id="marriage-duration">
+        <option value="" selected="selected"> - Choose -</option>
+        <option value="less-than-1-year">less than 1 year</option>
+        <option value="1-5-years">1-5 years</option>
+        <option value="more-than-5">stage: shes poisoning my food</option>
+      </select>
+    </div> <!-- ends marriage duration div -->
+
+      <br />
+
+      <label for='uploaded-file'>
+        <p class="fill-info">
+          Upload resume:
+        </p>
+      </label>
+
+      <br/>
+
+      <input type="file" name="uploaded_file">
+
+      <br/>
+      <br/>
+
+      <label for="message">
+        <p class="fill-info">
+          Message
+        </p>
+      </label>
+
+      <br/>
+      <br/>
+
+      <textarea name="message" id="Message" placeholder="Message"></textarea>
+      <br />
+      <br />
+
+      <button type="submit">Submit</button>
+
+    </form>
+
+
+
+
+  <a id="contact-info">
+    <h2>
+    <div class="black-block-column">Contact Information</div>
+    </h2>
+
+    <h3 class="contact-information">
+    <p>Elvira Gangte</p><br />
+    <p>Regulated Immigration Consultant</p><br />
+    <p>1-778-870-0463</p><br />
+  </a>
+
+      <p>
+        <span>E-mail:</span>
+        <a href="mailto:elvira@filmeximmigration.ca">
+          <span>elvira@filmeximmigration.ca</span>
+        </a>
+      </p>
+      <br />
+
+  </h3>
+
+  <footer>
+  <script src="js/jquery-2.1.4.min.js"></script>
+  </footer>
 </div>
 
-<!-- FORM STARTS / MESSAGE AREA NEED TO BE FORMATTED TO FIT-->
-
-<form action="#" method="post" id="contact-form">
-    <label for="name">
-      <p class="fill-info">Name</p>
-    </label>
-
-    <br />
-    <br />
-
-    <input type="text" name="name" size="10" maxlength="10" id="name" placeholder="Name" />
-    <br/>
-    <br/>
-
-  <div class="application-options">
-    <label for="application">
-      <p class="fill-info">Type of application</p>
-    </label>
-
-    <br />
-    <br />
-
-    <select id="type-of-application">
-
-      <option value="choose" selected="selected">
-      - Choose -
-      </option>
-
-      <option value="spousal-sponsorship">
-        Spousal Sponsorship
-      </option>
-
-      <option value="work-permit">
-        Work Permit
-      </option>
-
-      <option value="federal-skilled-worker">
-        Federal Skilled Worker
-      </option>
-
-      <option value="provincial-nominee-program">
-        Provincial Nominee
-      </option>
-
-      <option value="tourist-visa">
-        Tourist Visa
-      </option>
-
-  </select>
-  </div> <!-- ends application-options div -->
-
-  <br/>
-
-  <!-- when user chooses Spousal Sponsorship Program, the div below will activate (more specifically the partner gender option will pop out) -->
-
-  <div id="spousal-gender-option">
-
-       <label for="partner-gender">Spouse's gender</label> <br/><br/>
-    <select id="partner-gender">
-      <option value="" selected="selected">- Choose -</option>
-      <option value="male">male</option>
-      <option value="female">female</option>
-    </select>
-
-  </div> <!-- ends spousal sponsorship application div -->
-
-  <br/>
-    <br/>
-
-  <div id="marriage-duration">
-    <label for="marriage-duration">Duration of marriage</label><br/><br/>
-    <select id="marriage-duration">
-      <option value="" selected="selected"> - Choose -</option>
-      <option value="less-than-1-year">less than 1 year</option>
-      <option value="1-5-years">1-5 years</option>
-      <option value="more-than-5">stage: shes poisoning my food</option>
-    </select>
-  </div> <!-- ends marriage duration div -->
-
-    <br />
-
-    <label for='uploaded-file'>
-      <p class="fill-info">
-        Upload resume:
-      </p>
-    </label>
-
-    <br/>
-
-    <input type="file" name="uploaded_file">
-
-    <br/>
-    <br/>
-
-    <label for="message">
-      <p class="fill-info">
-        Message
-      </p>
-    </label>
-
-    <br/>
-    <br/>
-
-    <textarea name="message" id="Message" placeholder="Message"></textarea>
-    <br />
-    <br />
-
-    <button type="submit">Submit</button>
-
-  </form>
-
-
-
-
-<a id="contact-info">
-  <h2>
-  <div class="black-block-column">Contact Information</div>
-  </h2>
-
-  <h3 class="contact-information">
-  <p>Elvira Gangte</p><br />
-  <p>Regulated Immigration Consultant</p><br />
-  <p>1-778-870-0463</p><br />
-</a>
-
-    <p>
-      <span>E-mail:</span>
-      <a href="mailto:elvira@filmeximmigration.ca">
-        <span>elvira@filmeximmigration.ca</span>
-      </a>
-    </p>
-    <br />
-
-</h3>
-
 </body>
-
-<footer>
-<script src="js/jquery-2.1.4.min.js"></script>
-</footer>
 
 </html>
