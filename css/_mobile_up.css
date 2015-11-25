@@ -223,64 +223,6 @@ filmex-logo {
 
 }
 
-form {
-transition: all 2s ease;
-background-image: linear-gradient(
-      to right, rgba(53, 48, 44, 1) 0%, rgba(53, 48, 48, 0.9) 33%,
-      rgba(53, 48, 48, 0.6) 66%, rgba(53, 48, 48, 0.3) 100%);
-padding: 20px;
-border-radius: 10px;
-text-align: left;
-width: 80%;
-box-shadow: inset 0px -3px 1px rgba(0, 0, 0, 0.45),
-0px 2px 2px rgba(0, 0, 0, 0.25);
-}
-
-form:hover {
-background-image: linear-gradient(
-      to right, rgba(53, 48, 44, 1) 0%, rgba(53, 48, 48, 0.9) 33%,
-      rgba(53, 48, 48, 0.6) 66%, rgba(53, 48, 48, 1) 100%);
-background-color: grey;
-padding: 50px;
-border-radius: 10px;
-text-align: left;
-width: 90%;
-height: auto;
-box-shadow: 5px rgba (0, 0, 0, 1);
-text-transform: uppercase;
-letter-spacing: 0.5px;
-}
-
-input { border-radius: 5px;
-}
-
-input[type="text"],
-input[type="search"] {
-   color: #111;
-   font-family: Helvetica, sans-serif;
-   padding: 2px 5px;
-}
-
-button { background-color: white;
-border-radius: 5px;
-}
-
-button:hover { color: hsla(0, 0%, 25%, 1);
-}
-
-button:active { color: green;
-}
-
-input:focus, textarea:focus, label:focus {
-   background: grey;
-   max-width: 200px;
-}
-
-.fill-info {
-  color: white;
-  font-size: 20px;
-}
-
 .contact-information {
   color: black;
   font-size: 20px;
@@ -308,64 +250,6 @@ input:focus, textarea:focus, label:focus {
   letter-spacing: 1.5px;
   margin:auto;
   text-decoration: underline;
-}
-
-form {
-transition: all 2s ease;
-background-image: linear-gradient(
-      to right, rgba(53, 48, 44, 1) 0%, rgba(53, 48, 48, 0.9) 33%,
-      rgba(53, 48, 48, 0.6) 66%, rgba(53, 48, 48, 0.3) 100%);
-padding: 20px;
-margin: auto;
-border-radius: 10px;
-text-align: left;
-width: 30%;
-box-shadow: inset 0px -3px 1px rgba(0, 0, 0, 0.45),
-0px 2px 2px rgba(0, 0, 0, 0.25);
-
-}
-
-form:hover {
-background-image: linear-gradient(
-      to right, rgba(53, 48, 44, 1) 0%, rgba(53, 48, 48, 0.9) 33%,
-      rgba(53, 48, 48, 0.6) 66%, rgba(53, 48, 48, 1) 100%);
-background-color: grey;
-padding: 50px;
-border-radius: 10px;
-text-align: left;
-width: 35%;
-height: auto;
-box-shadow: 5px rgba (0, 0, 0, 1);
-text-transform: uppercase;
-letter-spacing: 0.5px;
-}
-
-form {
-  margin-bottom: 30px;
-  padding-bottom: 20px;
-}
-
-input { border-radius: 5px;
-}
-
-button { background-color: white;
-border-radius: 5px;
-}
-
-button:hover { color: hsla(0, 0%, 25%, 1);
-}
-
-button:active { color: green;
-}
-
-input:focus, textarea:focus {
-   background: grey;
-   max-width: 120px;
-}
-
-.fill-info {
-  color: white;
-  font-size: 20px;
 }
 
 }

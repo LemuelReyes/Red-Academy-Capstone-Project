@@ -5,539 +5,249 @@
 
 @media all and (min-width: 1025px) {
 
-  body { margin: 0px;
-  }
+  /* ======== main page =========*/
 
-  header {
-    position: absolute;
-    text-align: center;
-    margin: 0px;
-    /* background-image: linear-gradient(
-      to right, rgba(53, 48, 44, 1) 0%, rgba(53, 48, 48, 0.9) 33%,
-      rgba(53, 48, 48, 0.6) 66%, rgba(53, 48, 48, 0.3) 100%);*/
-      background-color: black;
-    width: 100%;
-    height: auto;
-    z-index: 1;
-  }
+  /* header */
 
   .header-title {
-    text-align: center;
-    font-size: 45px;
-    color: rgba(248, 255, 255, 0.9);
-    font-weight: bold;
-    font-family:  'robotobold',sans-serif, monospace;
-    text-transform: uppercase;
-    margin-top: 80px;
-    margin-bottom: 0px;
-    letter-spacing: 3px;
+
+    font-size: 2em;
+
   }
 
 
   /* nav and link appearance */
 
   nav {
-    font-size: 15px;
-    color: rgba(248, 255, 255, 0.9);
-    letter-spacing: 0.5px;
-    text-transform: uppercase;
-    font-family:  'Roboto:100', sans-serif;, sans-serif, monospace;
-    padding-top: 0px;
-    padding-right: 40px;
-    padding-bottom: 10px;
-    text-align: center;
-  }
-
-  li {
-    margin-top: 20px;
-    margin-left: 10px;
-    display: inline-block;
-  }
-
-  a:link  {
-    color: rgba(248, 255, 255, 0.9);
-    text-decoration:none;
-  }
-
-  a:visited {
-    color: rgba(248, 255, 255, 0.9);
-  }
-
-  a:hover {
-    color: white;
-  }
-
-  a:active {
-    color: white;
+    font-size: 1em;
   }
 
 
-
-  /* main page */
+  /* hero image */
 
   .hero-image {
-  width: 100%;
-  height: auto;
-  padding-top: 205px;
-  position: relative;
+    padding-top: 205px;
+    position: relative;
   }
 
   .hero-main-text {
-  position: absolute;
-  margin-top: 450px;
-  margin-left: 140px;
-  font-size: 45px;
-  font-family: 'robotobold', sans-serif, monospace;
-  letter-spacing: 1px;
-  text-align: center;
-  text-transform: uppercase;
-  color: white;
-  z-index: 1;
-  background-color:  rgba(53, 48, 48, 0.5);
-  border:none 15px;
-  -moz-border-radius-topleft: 10px;
-  -moz-border-radius-topright:0px;
-  -moz-border-radius-bottomleft:0px;
-  -moz-border-radius-bottomright:5px;
-  -webkit-border-top-left-radius:10px;
-  -webkit-border-top-right-radius:0px;
-  -webkit-border-bottom-left-radius:0px;
-  -webkit-border-bottom-right-radius:5px;
-  border-top-left-radius:10px;
-  border-top-right-radius:0px;
-  border-bottom-left-radius:0px;
-  border-bottom-right-radius:5px;
+
+    margin-top: 13.5em;
+    margin-left: 3em;
+    font-size: 1.5em;
+    letter-spacing: 0.1em;
   }
 
   .hero-sub-text {
-  position: absolute;
-  margin-top: 573px;
-  margin-left: 600px;
-  font-size: 35px;
-  font-family: 'Roboto Slab', sans-serif, monospace;
-  letter-spacing: 0.5px;
-  text-align: center;
-  text-transform: lowercase;
-  color: white;
-  z-index: 1;
-  border:none 15px #1a121a;
-  background-color:  rgba(53, 48, 48, 0.5);
-  border:none 7px #1a121a;
-  -moz-border-radius-topleft: 0px;
-  -moz-border-radius-topright:24px;
-  -moz-border-radius-bottomleft:29px;
-  -moz-border-radius-bottomright:0px;
-  -webkit-border-top-left-radius:0px;
-  -webkit-border-top-right-radius:24px;
-  -webkit-border-bottom-left-radius:29px;
-  -webkit-border-bottom-right-radius:0px;
-  border-top-left-radius:0px;
-  border-top-right-radius:24px;
-  border-bottom-left-radius:29px;
-  border-bottom-right-radius:0px;
-
-
+    margin-top: 27em;
+    margin-left: 18em;
+    font-size: 1em;
+    letter-spacing: 0.5px;
   }
 
   /* index.html page */
 
   /* text */
 
-  .first-black-column {
-  border-top: 5px black solid;
-  background-color: black;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  display:block;
-  width: 100%;
-  height: 150px;
-  margin: 0px;
+  .first-black-block-column {
+  padding: 3em 0em;
   }
 
   .black-block-column {
-  padding-top: 40px;
-  background-color: black;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  display:block;
-  width: 100%;
-  height: 100px;
+    padding-top: 40px;
   }
 
   h2 {
-  margin: 0px;
-  padding-top: 0px;
-  color:  white;
-  font-size: 34px;
-  text-align: center;
-  font-family: 'Roboto Slab', sans-serif, monospace;
-  letter-spacing: 0.5px;
-  text-transform: uppercase;
+
+    font-size: 2em;
+    letter-spacing: 0.1em;
 
   }
 
   h3 {
-  color: black;
-  font-size: 20px;
-  text-align: center;
-  font-family: 'Roboto', georgia, monospace;
-  border: 1px solid white;
-  letter-spacing: 1.5px;
-  line-height: 40px;
-  }
 
-  .who-we-are {
-  text-align: left;
-  }
+    font-size: 1.2em;
 
+  }
 
   .testimonial-button {
-  border-top-left-radius: 5px;
-  border-bottom-right-radius: 5px;
-  max-width: 80%
-  text-align: center;
-  font-size: 25px;
-  margin:auto;
-  background:-webkit-gradient(linear, 80% 20%, 10% 21%, from(#8B958C), to(#5B6765));
-  -moz-box-shadow: 4px 6px 40px #000000;
-  -webkit-box-shadow: 4px 6px 40px #000000;
-  box-shadow: 4px 6px 40px #000000;
+
+  font-size: 1em;
+  margin-right: 30px;
+
   }
 
 
   .location-description {
-  content: "";
-  display: table;
-  clear: both;
-  width: 33%
-  float: right;
-  padding: 0px;
+    content: "";
+    display: table;
+    clear: both;
+    width: 33%
+    float: right;
+    padding: 0px;
   }
 
 
   /* directions, email, links are wrapped in span*/
 
   span {
-  background-color: black;
-  color: white;
+    background-color: black;
+    color: white;
   }
 
   /* link for ICCRC */
 
   #ICCRC-link {
-  text-color: black;
+    text-color: black;
   }
 
   /* index.html images */
   .man-in-library-image {
-  display: block;
-  margin: 0 auto;
-  width: 100%;
+    display: block;
+    margin: 0 auto;
+    width: 100%;
 
   }
 
   .paper-map-image {
-  display: block;
-  margin: 0 auto;
-  width: 100%;
+    display: block;
+    margin: 0 auto;
+    width: 100%;
   }
 
 
   .team-meeting-image {
-  display: block;
-  margin: 0 auto;
-  width: 100%;
+    display: block;
+    margin: 0 auto;
+    width: 100%;
   }
 
   .heart-drawing-image {
-  display: block;
-  margin: 0 auto;
-  width: 100%;
+    display: block;
+    margin: 0 auto;
+    width: 100%;
   }
 
   /* about.html images */
 
   .cufflink-img {
-  display: block;
-  width: 100%;
-  height: auto;
-  padding-top: 205px;
-  position: relative;
+    display: block;
+    width: 100%;
+    height: auto;
+    padding-top: 205px;
+    position: relative;
   }
 
   .suit-img {
-  display: block;
-  width: 100%;
-  height: auto;
+    display: block;
+    width: 100%;
+    height: auto;
   }
 
   .book-img {
-  display: block;
-  width: 100%;
-  height: auto;
+    display: block;
+    width: 100%;
+    height: auto;
   }
 
   /*logos*/
 
   .container {
-  display: inline-block;
+    display: inline-block;
   }
 
   .capic-logo {
-  height:auto;
-  margin: 0;
-  width: 33%;
-  padding-left: 10px;
-  padding-right: 10px;
-  padding-top: 30px;
-  display: inline-block;
+    height:auto;
+    width: 33%;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 30px;
   }
 
   .iccrc-logo {
-  height:auto;
-  width: 33%;
-  margin:0;
-  padding-left: 10px;
-  padding-right: 10px;
-  display: inline-block;
+    height:auto;
+    width: 33%;
+    padding-left: 10px;
+    padding-right: 10px;
   }
 
   filmex-logo {
-  height: auto;
-  margin: 0;
-  width: 33%;
-  padding-left: 10px;
-  padding-right: 10px;
-  display: inline-block;
+    height: auto;
+    width: 33%;
+    padding-left: 10px;
+    padding-right: 10px;
   }
 
 
   /* about.html text */
 
   .quote-column {
-  background-color: black;
-  display:block;
-  width: 100%;
-  height: auto;
+    background-color: black;
+    display:block;
+    width: 100%;
+    height: auto;
   }
 
   .quote-column-content {
-  margin: 0px;
-  padding-top: 0px;
-  color:  white;
-  font-size: 25px;
-  text-align: center;
-  font-family: 'Roboto Slab', sans-serif, monospace;
-  letter-spacing: 0.5px;
-  text-transform: uppercase;
+
+    color:  white;
+    font-size: 0.9em;
+    letter-spacing: 0.5px;
+    line-height: 40px;
+
   }
 
   /* distinguishes first line of text and emphasizes it*/
 
   .lead-text {
-  color: black;
-  font-size: 25px;
-  text-align: center;
-  font-family: 'Roboto', georgia, monospace;
-  letter-spacing: 1.5px;
+
+    font-size: 1.5em;
+    letter-spacing: 1.5px;
   }
 
   /* to be used for big parapgraphs that need to be readable */
 
   .big-paragraph {
-  color: black;
-  font-size: 25px;
-  text-align: left;
-  font-family: 'Roboto', georgia, monospace;
-  border: 1px solid white;
-  letter-spacing: 1.5px;
-  line-height: 30px;
+
+    font-size: 1em;
+    letter-spacing: 1.7px;
   }
 
   /* contact page */
 
   .office-location {
 
-  width: 100%;
-  height: auto;
-  padding-top: 205px;
-  position: relative;
-  }
+    padding-top: 215px;
 
-  form {
-  transition: all 2s ease;
-  background-image: linear-gradient(
-      to right, rgba(53, 48, 44, 1) 0%, rgba(53, 48, 48, 0.9) 33%,
-      rgba(53, 48, 48, 0.6) 66%, rgba(53, 48, 48, 0.3) 100%);
-  padding: 20px;
-  border-radius: 10px;
-  text-align: left;
-  width: 30%;
-  box-shadow: inset 0px -3px 1px rgba(0, 0, 0, 0.45),
-  0px 2px 2px rgba(0, 0, 0, 0.25);
-  }
-
-  form:hover {
-  background-image: linear-gradient(
-      to right, rgba(53, 48, 44, 1) 0%, rgba(53, 48, 48, 0.9) 33%,
-      rgba(53, 48, 48, 0.6) 66%, rgba(53, 48, 48, 1) 100%);
-  background-color: grey;
-  padding: 50px;
-  border-radius: 10px;
-  text-align: left;
-  width: 35%;
-  height: auto;
-  box-shadow: 5px rgba (0, 0, 0, 1);
-  text-transform: uppercase;
-  letter-spacing: 0.5px;
-  }
-
-  input { border-radius: 5px;
-  }
-
-  input[type="text"],
-  input[type="search"] {
-   color: #111;
-   font-family: Helvetica, sans-serif;
-   padding: 2px 5px;
-  }
-
-  button { background-color: white;
-  border-radius: 5px;
-  }
-
-  button:hover { color: hsla(0, 0%, 25%, 1);
-  }
-
-  button:active { color: green;
-  }
-
-  input:focus, textarea:focus, label:focus {
-   background: grey;
-   max-width: 200px;
-  }
-
-  .fill-info {
-  color: white;
-  font-size: 20px;
   }
 
   .contact-information {
-  color: black;
-  font-size: 20px;
-  text-align: center;
-  font-family: 'Roboto', georgia, monospace;
-  border: 25px solid white;
-  letter-spacing: 1.5px;
-  line-height: 5px;
-  padding: 10px 10px;
+    color: black;
+    font-size: 20px;
+    text-align: center;
+    font-family: 'Roboto', georgia, monospace;
+    border: 25px solid white;
+    letter-spacing: 1.5px;
+    line-height: 5px;
+    padding: 10px 10px;
   }
 
   /* form */
   .contact-form-background {
-  background-color: black;
-  display:block;
-  width: 100%;
-  height: auto;
+    background-color: black;
+    display:block;
+    width: 100%;
+    height: auto;
   }
 
   .form-title {
-  color: black;
-  font-size: 25px;
-  text-align: center;
-  font-family: 'Roboto', georgia, monospace;
-  letter-spacing: 1.5px;
-  margin:auto;
-  text-decoration: underline;
-  }
-
-  form {
-  transition: all 2s ease;
-  background-image: linear-gradient(
-      to right, rgba(53, 48, 44, 1) 0%, rgba(53, 48, 48, 0.9) 33%,
-      rgba(53, 48, 48, 0.6) 66%, rgba(53, 48, 48, 0.3) 100%);
-  padding: 20px;
-  margin: auto;
-  border-radius: 10px;
-  text-align: left;
-  width: 30%;
-  box-shadow: inset 0px -3px 1px rgba(0, 0, 0, 0.45),
-  0px 2px 2px rgba(0, 0, 0, 0.25);
-
-  }
-
-  form:hover {
-  background-image: linear-gradient(
-      to right, rgba(53, 48, 44, 1) 0%, rgba(53, 48, 48, 0.9) 33%,
-      rgba(53, 48, 48, 0.6) 66%, rgba(53, 48, 48, 1) 100%);
-  background-color: grey;
-  padding: 50px;
-  border-radius: 10px;
-  text-align: left;
-  width: 35%;
-  height: auto;
-  box-shadow: 5px rgba (0, 0, 0, 1);
-  text-transform: uppercase;
-  letter-spacing: 0.5px;
-  }
-
-  form {
-  margin-bottom: 30px;
-  padding-bottom: 20px;
-  }
-
-  input { border-radius: 5px;
-  }
-
-  button { background-color: white;
-  border-radius: 5px;
-  }
-
-  button:hover { color: hsla(0, 0%, 25%, 1);
-  }
-
-  button:active { color: green;
-  }
-
-  input:focus, textarea:focus {
-   background: grey;
-   max-width: 120px;
-  }
-
-  .fill-info {
-  color: white;
-  font-size: 20px;
-  }
-
-  }
-
-
-  /* about */
-
-  .about-main-img {
-  margin-top: 156px;
-  background-image: url("../images/about-main-img.jpe") no-repeat scroll center;
-  width: 100%;
-  height: auto;
-  }
-
-  /* contact */
-
-  .office-location {
-  position: relative;
-  width: 100%;
-  height: auto;
-  }
-
-  .contact-information {
-  color: black;
-  font-size: 20px;
-  text-align: center;
-  font-family: 'Roboto', georgia, monospace;
-  border: 25px solid white;
-  letter-spacing: 1.5px;
-  line-height: 5px;
-  padding: 15px 15px;
+    color: black;
+    font-size: 25px;
+    text-align: center;
+    font-family: 'Roboto', georgia, monospace;
+    letter-spacing: 1.5px;
+    margin:auto;
+    text-decoration: underline;
   }
 
 
