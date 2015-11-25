@@ -25,7 +25,11 @@
                             PRE-480 breakpoint issues
                             1. CONTACT INFORMATION are jumbled up
                             2. LOGOS DO NOT SCALE SIDE BY SIDE, WHEN THE SCREEN IS SMALL ENOUGH THEY DONT SCALE IN SIZE
+                            3. reduce white space with testimonial-buttons
 
+                            480 breakpoint issues
+                            1. contact information jumbled up
+                            2. form input slightly out of container
 
                             720 breakpoint issues
                             1. hero sub text is not scaling and does not move when breakpoint is scaling up. making it look weird.
@@ -240,12 +244,12 @@ overflow: hidden;
 
   h3 {
     color: black;
-    font-size: 15px;
+    font-size: 1em;
     text-align: left;
     font-family: 'Roboto', georgia, monospace;
     border: 1px solid white;
-    letter-spacing: 1.5px;
-    line-height: 30px;
+    letter-spacing: 0.1em;
+    line-height: 1.5em;
     margin: 1.5em 2em;
   }
 
@@ -380,10 +384,11 @@ overflow: hidden;
     margin: 0px;
     padding-top: 0px;
     color:  white;
-    font-size: 1em;
+    font-size: 0.9em;
     text-align: center;
     font-family: 'Roboto Slab', sans-serif, monospace;
-    letter-spacing: 0.5px;
+    letter-spacing: 3px;
+    line-height: 25px;
     text-transform: uppercase;
   }
 
@@ -401,7 +406,7 @@ overflow: hidden;
 
   .big-paragraph {
     color: black;
-    font-size: 15px;
+    font-size: 0.9em;
     text-align: left;
     font-family: 'Roboto', georgia, monospace;
     border: 1px solid white;
