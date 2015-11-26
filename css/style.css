@@ -12,27 +12,28 @@
 
 /*-----------------------------------------------------------------------------
                            1.issues to fix:
-                               PRIORITIES
-                            *** navigation is not working.
-                            1.  LEARN ABOUT AND INCORPORATE EM / REM
-                            2. PHOTOSHOP IMAGES TO GREY
-                            3. CLEAN CODE
-                            4. TEST SITE
-                            5. DEBUG
-                            6. cut down code that repeats and repeats
-                            7. style post 1080 / desktop version
+
+
+                            1. PHOTOSHOP IMAGES TO GREY
+                            2. CLEAN CODE
+                            3. TEST SITE
+                            4. DEBUG
+                            5. style post 1080 / desktop version
 
                             PRE-480 breakpoint issues
-                            1. CONTACT INFORMATION are jumbled up
-                            2. LOGOS DO NOT SCALE SIDE BY SIDE, WHEN THE SCREEN IS SMALL ENOUGH THEY DONT SCALE IN SIZE
-                            3. reduce white space with testimonial-buttons
+                            1. LOGOS DO NOT SCALE SIDE BY SIDE, WHEN THE SCREEN IS SMALL ENOUGH THEY DONT SCALE IN SIZE
+                            2. reduce white space with testimonial-buttons
+                            3. subtext not moving
 
                             480 breakpoint issues
-                            1. contact information jumbled up
-                            2. form input slightly out of container
+                            1. just need to format logos.
+                            2. subtext not moving
+                            3. reduce white space with testimonial buttons
 
                             720 breakpoint issues
                             1. hero sub text is not scaling and does not move when breakpoint is scaling up. making it look weird.
+                            2. reduce white space with testimonial buttons
+                            3. format logos
 
                             1080 issues
                             1.the only issue 1080 and beyond would probably the scaling images. they would get too big.
@@ -387,8 +388,8 @@ overflow: hidden;
     font-size: 0.9em;
     text-align: center;
     font-family: 'Roboto Slab', sans-serif, monospace;
-    letter-spacing: 3px;
-    line-height: 25px;
+    letter-spacing: 0.2em;
+    line-height: 1.8em;
     text-transform: uppercase;
   }
 
@@ -399,7 +400,7 @@ overflow: hidden;
     font-size: 1.5em;
     text-align: center;
     font-family: 'Roboto', georgia, monospace;
-    letter-spacing: 1.5px;
+    letter-spacing: 0.3em;
   }
 
   /* to be used for big parapgraphs that need to be readable */
@@ -410,8 +411,8 @@ overflow: hidden;
     text-align: left;
     font-family: 'Roboto', georgia, monospace;
     border: 1px solid white;
-    letter-spacing: 1.5px;
-    line-height: 25px;
+    letter-spacing: 0.2em;
+    line-height: 1.4em;
   }
 
   /* contact page */
@@ -424,73 +425,14 @@ overflow: hidden;
     position: relative;
   }
 
-  form {
-  transition: all 2s ease;
-  background-image: linear-gradient(
-        to right, rgba(53, 48, 44, 1) 0%, rgba(53, 48, 48, 0.9) 33%,
-        rgba(53, 48, 48, 0.6) 66%, rgba(53, 48, 48, 0.3) 100%);
-  padding: 20px;
-  border-radius: 10px;
-  text-align: left;
-  width: 30%;
-  box-shadow: inset 0px -3px 1px rgba(0, 0, 0, 0.45),
-  0px 2px 2px rgba(0, 0, 0, 0.25);
-  }
-
-  form:hover {
-  background-image: linear-gradient(
-        to right, rgba(53, 48, 44, 1) 0%, rgba(53, 48, 48, 0.9) 33%,
-        rgba(53, 48, 48, 0.6) 66%, rgba(53, 48, 48, 1) 100%);
-  background-color: grey;
-  padding: 50px;
-  border-radius: 10px;
-  text-align: left;
-  width: 35%;
-  height: auto;
-  box-shadow: 5px rgba (0, 0, 0, 1);
-  text-transform: uppercase;
-  letter-spacing: 0.5px;
-  }
-
-  input { border-radius: 5px;
-  }
-
-  input[type="text"],
-  input[type="search"] {
-     color: #111;
-     font-family: Helvetica, sans-serif;
-     padding: 2px 5px;
-  }
-
-  button { background-color: white;
-  border-radius: 5px;
-  }
-
-  button:hover { color: hsla(0, 0%, 25%, 1);
-  }
-
-  button:active { color: green;
-  }
-
-  input:focus, textarea:focus, label:focus {
-     background: grey;
-     max-width: 200px;
-  }
-
-  .fill-info {
-    color: white;
-    font-size: 20px;
-  }
-
   .contact-information {
     color: black;
-    font-size: 1.5em;
+    font-size: 1.2em;
     text-align: center;
     font-family: 'Roboto', georgia, monospace;
-    border: 25px solid white;
     letter-spacing: 1.5px;
     line-height: 1em;
-    padding: 10px 10px;
+    padding: 1em 1em;
   }
 
   /* form */
@@ -536,31 +478,35 @@ overflow: hidden;
   }
 
   form {
-    margin-bottom: 30px;
-    padding-bottom: 20px;
+  margin-bottom: 30px;
+  padding-bottom: 20px;
   }
 
-  input { border-radius: 5px;
-  }
-
-  button { background-color: white;
+  input {
   border-radius: 5px;
   }
 
-  button:hover { color: hsla(0, 0%, 25%, 1);
+  button {
+  background-color: white;
+  border-radius: 5px;
   }
 
-  button:active { color: green;
+  button:hover {
+  color: hsla(0, 0%, 25%, 1);
+  }
+
+  button:active {
+  color: green;
   }
 
   input:focus, textarea:focus {
-     background: grey;
-     max-width: 120px;
+  background: grey;
+  max-width: 120px;
   }
 
   .fill-info {
-    color: white;
-    font-size: 20px;
+  color: white;
+  font-size: 20px;
   }
 
 
