@@ -137,7 +137,7 @@ filmex-logo {
 .lead-text {
 
   font-size: 1.5em;
-  letter-spacing: 1.5px;
+  letter-spacing: 0.1em;
 }
 
 /* to be used for big parapgraphs that need to be readable */
