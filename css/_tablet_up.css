@@ -10,7 +10,7 @@
 
   .header-title {
 
-    font-size: 2em;
+    font-size: 3em;
 
   }
 
@@ -25,22 +25,22 @@
   /* hero image */
 
   .hero-image {
-    padding-top: 205px;
+    padding-top: 247px;
     position: relative;
   }
 
   .hero-main-text {
 
-    margin-top: 13.5em;
+    margin-top: 14em;
     margin-left: 3em;
-    font-size: 1.5em;
+    font-size: 2em;
     letter-spacing: 0.1em;
   }
 
   .hero-sub-text {
-    margin-top: 27em;
+    margin-top: 22.5em;
     margin-left: 18em;
-    font-size: 1em;
+    font-size: 1.5em;
     letter-spacing: 0.5px;
   }
 
@@ -76,57 +76,6 @@
 
   }
 
-
-  .location-description {
-    content: "";
-    display: table;
-    clear: both;
-    width: 33%
-    float: right;
-    padding: 0px;
-  }
-
-
-  /* directions, email, links are wrapped in span*/
-
-  span {
-    background-color: black;
-    color: white;
-  }
-
-  /* link for ICCRC */
-
-  #ICCRC-link {
-    text-color: black;
-  }
-
-  /* index.html images */
-  .man-in-library-image {
-    display: block;
-    margin: 0 auto;
-    width: 100%;
-
-  }
-
-  .paper-map-image {
-    display: block;
-    margin: 0 auto;
-    width: 100%;
-  }
-
-
-  .team-meeting-image {
-    display: block;
-    margin: 0 auto;
-    width: 100%;
-  }
-
-  .heart-drawing-image {
-    display: block;
-    margin: 0 auto;
-    width: 100%;
-  }
-
   /* about.html images */
 
   .cufflink-img {
@@ -137,17 +86,6 @@
     position: relative;
   }
 
-  .suit-img {
-    display: block;
-    width: 100%;
-    height: auto;
-  }
-
-  .book-img {
-    display: block;
-    width: 100%;
-    height: auto;
-  }
 
   /*logos*/
 
@@ -200,7 +138,7 @@
 
   .lead-text {
 
-    font-size: 1.5em;
+    font-size: 2em;
     letter-spacing: 1.5px;
   }
 
@@ -208,15 +146,15 @@
 
   .big-paragraph {
 
-    font-size: 1em;
+    font-size: 1.2em;
     letter-spacing: 1.7px;
   }
-  
+
   /* contact page */
 
   .office-location {
 
-    padding-top: 215px;
+    padding-top: 248px;
 
   }
 
@@ -232,12 +170,6 @@
   }
 
   /* form */
-  .contact-form-background {
-    background-color: black;
-    display:block;
-    width: 100%;
-    height: auto;
-  }
 
   .form-title {
     color: black;

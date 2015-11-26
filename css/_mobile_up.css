@@ -80,56 +80,6 @@ margin-right: 30px;
 }
 
 
-.location-description {
-  content: "";
-  display: table;
-  clear: both;
-  width: 33%
-  float: right;
-  padding: 0px;
-}
-
-
-/* directions, email, links are wrapped in span*/
-
-span {
-  background-color: black;
-  color: white;
-}
-
-/* link for ICCRC */
-
-#ICCRC-link {
-  text-color: black;
-}
-
-/* index.html images */
-.man-in-library-image {
-  display: block;
-  margin: 0 auto;
-  width: 100%;
-
-}
-
-.paper-map-image {
-  display: block;
-  margin: 0 auto;
-  width: 100%;
-}
-
-
-.team-meeting-image {
-  display: block;
-  margin: 0 auto;
-  width: 100%;
-}
-
-.heart-drawing-image {
-  display: block;
-  margin: 0 auto;
-  width: 100%;
-}
-
 /* about.html images */
 
 .cufflink-img {
@@ -138,18 +88,6 @@ span {
   height: auto;
   padding-top: 205px;
   position: relative;
-}
-
-.suit-img {
-  display: block;
-  width: 100%;
-  height: auto;
-}
-
-.book-img {
-  display: block;
-  width: 100%;
-  height: auto;
 }
 
 /*logos*/
@@ -235,12 +173,7 @@ filmex-logo {
 }
 
 /* form */
-.contact-form-background {
-  background-color: black;
-  display:block;
-  width: 100%;
-  height: auto;
-}
+
 
 .form-title {
   color: black;
@@ -250,6 +183,15 @@ filmex-logo {
   letter-spacing: 1.5px;
   margin:auto;
   text-decoration: underline;
+}
+
+form {
+  width: 50%;
+}
+
+form:hover {
+  width: 70%;
+
 }
 
 }
