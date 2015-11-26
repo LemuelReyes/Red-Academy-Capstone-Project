@@ -18,28 +18,15 @@
                             2. CLEAN CODE
                             3. TEST SITE
                             4. DEBUG
-                            5. style post 1080 / desktop version
 
-                            PRE-480 breakpoint issues
-                            1. LOGOS DO NOT SCALE SIDE BY SIDE, WHEN THE SCREEN IS SMALL ENOUGH THEY DONT SCALE IN SIZE
-                            2. reduce white space with testimonial-buttons
-                            3. subtext not moving
-
-                            480 breakpoint issues
-                            1. just need to format logos.
-                            2. subtext not moving
-                            3. reduce white space with testimonial buttons
-
-                            720 breakpoint issues
+                            BASE, 480, 720, 1080 breakpoint issues
                             1. hero sub text is not scaling and does not move when breakpoint is scaling up. making it look weird.
                             2. reduce white space with testimonial buttons
                             3. format logos
 
                             1080 issues
                             1.the only issue 1080 and beyond would probably the scaling images. they would get too big.
-                            2. fix header index html
-                            3. about whitespace above hero image
-                            4. contact page is a mess
+
 
 -------------------------------------------------------------------------------
 */

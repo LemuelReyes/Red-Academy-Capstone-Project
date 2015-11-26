@@ -14,14 +14,6 @@
 
   }
 
-
-  /* nav and link appearance */
-
-  nav {
-    font-size: 1em;
-  }
-
-
   /* hero image */
 
   .hero-image {
@@ -72,18 +64,12 @@
   .testimonial-button {
 
   font-size: 1em;
-  margin-right: 30px;
-
   }
 
   /* about.html images */
 
   .cufflink-img {
-    display: block;
-    width: 100%;
-    height: auto;
     padding-top: 205px;
-    position: relative;
   }
 
 
@@ -118,12 +104,6 @@
 
   /* about.html text */
 
-  .quote-column {
-    background-color: black;
-    display:block;
-    width: 100%;
-    height: auto;
-  }
 
   .quote-column-content {
 
@@ -171,5 +151,9 @@
     letter-spacing: 0.3em;
   }
 
+
+  form:hover {
+    text-align: center;
+  }
 
 }
