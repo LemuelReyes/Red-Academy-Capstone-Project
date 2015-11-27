@@ -73,6 +73,11 @@
   margin: 0.1em 4.5em;
   }
 
+  .location-description {
+
+    font-size: 1.4em;
+
+  }
   /* about.html images */
 
   .cufflink-img {

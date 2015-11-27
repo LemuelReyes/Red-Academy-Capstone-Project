@@ -13,7 +13,7 @@
 /*-----------------------------------------------------------------------------
                            1.issues to fix:
 
-                              INDEX.HTML DEBUGGED.
+                              INDEX.HTML DEBUGGED except a <br>. ABOUT.HTML DEBUGGED. CONTACT ALMOST DEBUGGED.
                             1. PHOTOSHOP IMAGES TO GREY
                             2. CLEAN CODE
                             3. TEST SITE
@@ -26,8 +26,7 @@
                             1080 issues
                             1.the only issue 1080 and beyond would probably the scaling images. they would get too big. ask for suggestions.
 
-                            some breakpoints the site looks small
-                            try installing hambuger? and pointing down from image.
+                            some breakpoints the site looks small?
 
 -------------------------------------------------------------------------------
 */
@@ -305,25 +304,40 @@ overflow: hidden;
   .location-description {
     width: 100%
     height: auto;
-    padding: 0px;
+    padding: 3em;
     margin: auto;
     position: relative;
     text-align: center;
+    color: black;
+    font-size: 1em;
+    font-family: 'Roboto', georgia, monospace;
+    letter-spacing: 0.1em;
+    line-height: 1.8em;
   }
 
 
   /* directions, email, links are wrapped in span*/
-
-  span {
-    background-color: black;
-    color: white;
-  }
 
   /* link for ICCRC */
 
   #ICCRC-link {
     text-color: black;
   }
+
+  #email, #directions {
+    color: black;
+  }
+
+  #email:hover, #directions:hover {
+    color: white;
+    background-color: black;
+  }
+
+  #email:click, #directions:click {
+    color: grey;
+    background-color: black;
+  }
+
 
   /* index.html images */
   .man-in-library-image {
@@ -462,7 +476,7 @@ overflow: hidden;
     text-align: center;
     font-family: 'Roboto', georgia, monospace;
     letter-spacing: 1.5px;
-    line-height: 1em;
+    line-height: 3em;
     padding: 1em 1em;
   }
 
@@ -470,7 +484,7 @@ overflow: hidden;
 
   .form-title {
     color: black;
-    font-size: 1.5em;
+    font-size: 2.5em;
     text-align: center;
     font-family: 'Roboto', georgia, monospace;
     letter-spacing: 1.5px;
@@ -536,8 +550,10 @@ overflow: hidden;
   }
 
   .fill-info {
-  color: white;
+  color: black;
   font-size: 20px;
+  margin-bottom: 5em;
+
   }
 
 

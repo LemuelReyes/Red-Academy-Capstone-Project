@@ -82,6 +82,12 @@ breakpoint-1024
   margin: 0.1em 6em;
   }
 
+  .location-description {
+
+    font-size: 1.6em;
+  }
+
+
   /* about.html images */
 
   .cufflink-img {

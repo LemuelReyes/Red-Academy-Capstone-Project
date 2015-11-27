@@ -39,7 +39,7 @@
 
 <div class="page-content">
   <img src="https://www.google.ca/maps/vt/data=RfCSdfNZ0LFPrHSm0ublXdzhdrDFhtmHhN1u-gM,Ru9Yb8Bb44c5ejonNJL78usgdJW1eo1yxoQ_BDfPfOrWs6AE7QBIrmOrj9Iz-Gt2wiF7qPPp7TGc7SW5sTZIqIYSVzGLE_jW_O2kEpaDGnjvq6L4_3NdTLOnq_U"
-  alt="filmex immigration's office location" title="office-location" class="office-location" width="100%" height="300" />
+  alt="filmex immigration's office location" title="office-location" class="office-location" />
 
 
 
@@ -52,19 +52,19 @@ src="https://maps.google.com/maps?hl=en&q=309-525 Seymour St&ie=UTF8&t=roadmap&z
 </div>
 </iframe> -->
 
-  <h3>
-    <div class="location-description">
-      <p>We're located on the third floor of one of the many <em>Heritage buildings</em> of Vancouver.
+
+    <h3 class="location-description">
+      We're located on the third floor of one of the many <em>Heritage buildings</em> of Vancouver.
       The <em>Seymour building</em> at 309-525 Seymour St
       (click for <a href="https://www.google.ca/maps/dir//525+Seymour+St,+Vancouver,+BC+V6B+3H6/@49.2837745,-123.1168638,17z/data=!4m13!1m4!3m3!1s0x54867178c0a64081:0x8e12ea3413bd6653!2s525+Seymour+St,+Vancouver,+BC+V6B+3H6!3b1!4m7!1m0!1m5!1m1!1s0x54867178c0a64081:0x8e12ea3413bd6653!2m2!1d-123.1146751!2d49.2837745" target="_blank">
         <em>
-          <span>directions</span>
+          <span id="directions">directions</span>
           </em>)</a>
         - a few blocks up from Seymour and West Pender
-      Street. Contact us for an appointment or consultation.</p>
-    </div>
+      Street. Contact us for an appointment or consultation.
+    </h3>
 
-  </h3>
+
 
 
   <p class="form-title">Request a quotation</p><br/> <br/>
@@ -74,7 +74,7 @@ src="https://maps.google.com/maps?hl=en&q=309-525 Seymour St&ie=UTF8&t=roadmap&z
 
   <form action="#" method="post" id="contact-form">
       <label for="name">
-        <p class="fill-info">Name</p>
+        <span class="fill-info">Name</span>
       </label>
 
       <br />
@@ -86,7 +86,7 @@ src="https://maps.google.com/maps?hl=en&q=309-525 Seymour St&ie=UTF8&t=roadmap&z
 
     <div class="application-options">
       <label for="application">
-        <p class="fill-info">Type of application</p>
+        <span class="fill-info">Type of application</span>
       </label>
 
       <br />
@@ -140,8 +140,8 @@ src="https://maps.google.com/maps?hl=en&q=309-525 Seymour St&ie=UTF8&t=roadmap&z
       <br/>
 
     <div id="marriage-duration">
-      <label for="marriage-duration">Duration of marriage</label><br/><br/>
-      <select id="marriage-duration">
+      <label for="marriage-length">Duration of marriage</label><br/><br/>
+      <select id="marriage-length">
         <option value="" selected="selected"> - Choose -</option>
         <option value="less-than-1-year">less than 1 year</option>
         <option value="1-5-years">1-5 years</option>
@@ -149,12 +149,12 @@ src="https://maps.google.com/maps?hl=en&q=309-525 Seymour St&ie=UTF8&t=roadmap&z
       </select>
     </div> <!-- ends marriage duration div -->
 
-      <br />
+    <br/>
 
       <label for='uploaded-file'>
-        <p class="fill-info">
-          Upload resume:
-        </p>
+        <span class="fill-info">
+          Upload resume: <br/>
+        </span>
       </label>
 
       <br/>
@@ -164,10 +164,10 @@ src="https://maps.google.com/maps?hl=en&q=309-525 Seymour St&ie=UTF8&t=roadmap&z
       <br/>
       <br/>
 
-      <label for="message">
-        <p class="fill-info">
+      <label for="Message">
+        <span class="fill-info">
           Message
-        </p>
+        </span>
       </label>
 
       <br/>
@@ -176,33 +176,25 @@ src="https://maps.google.com/maps?hl=en&q=309-525 Seymour St&ie=UTF8&t=roadmap&z
       <textarea name="message" id="Message" placeholder="Message"></textarea>
       <br />
       <br />
-
+      <br />
       <button type="submit">Submit</button>
 
     </form>
 
 
 
+    <div class="black-block-column"><h2>Contact Information</h2></div>
 
-  <a id="contact-info">
-    <h2>
-    <div class="black-block-column">Contact Information</div>
-    </h2>
 
     <h3 class="contact-information">
-    <p>Elvira Gangte</p><br />
-    <p>Regulated Immigration Consultant</p><br />
-    <p>1-778-870-0463</p><br />
-  </a>
-
-      <p>
-        <span>E-mail:</span>
-        <a href="mailto:elvira@filmeximmigration.ca">
-          <span>elvira@filmeximmigration.ca</span>
+    Elvira Gangte<br />
+    Regulated Immigration Consultant<br />
+    1-778-870-0463<br />
+    E-mail:
+        <a href="mailto:elvira@filmeximmigration.ca" id="email">
+        elvira@filmeximmigration.ca
         </a>
-      </p>
       <br />
-
   </h3>
 
   <footer>
