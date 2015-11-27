@@ -61,9 +61,16 @@
 
   }
 
+  .programs {
+
+    font-size: 1.6em;
+  
+  }
+
   .testimonial-button {
 
-  font-size: 1em;
+  font-size: 1.6em;
+  margin: 0.1em 4.5em;
   }
 
   /* about.html images */

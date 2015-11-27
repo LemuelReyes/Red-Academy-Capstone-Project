@@ -65,9 +65,16 @@ h3 {
 
 }
 
+.programs {
+
+  font-size: 1.3em;
+
+}
+
+
 .testimonial-button {
 
-font-size: 1em;
+font-size: 1.4em;
 
 }
 
@@ -77,7 +84,7 @@ font-size: 1em;
 .cufflink-img {
 
   padding-top: 205px;
-  
+
 }
 
 /*logos*/

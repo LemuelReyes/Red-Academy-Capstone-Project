@@ -69,10 +69,17 @@ breakpoint-1024
 
   }
 
+  .programs {
+
+    font-size: 1.6em;
+
+  }
+
+
   .testimonial-button {
 
-  font-size: 1.3em;
-  padding: 20px 0px;
+  font-size: 1.8em;
+  margin: 0.1em 6em;
   }
 
   /* about.html images */
