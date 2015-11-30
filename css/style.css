@@ -2,10 +2,31 @@
 ===============================================================================
                               LEGEND:
 
-                              1.issues
-                              2.breakpoint-480
-                              3.breakpoint-720
-                              4.breakpoint-1024
+                              1. issues and celebrations
+                              2. base breakpoint
+                              3. breakpoint-480
+                              4. breakpoint-720
+                              5. breakpoint-1024
+
+                              (in descending order)
+                              fontfaces, clearfixes, page-content
+                              header, body, nav
+                              hero image, text
+                              index.html
+                              black columns
+                              h3, h3 text
+                              testimonial-button
+                              links, email
+                              index.html images
+                              about.html images
+                              logos
+                              about.html text
+                              lead text and big paragraph
+                              contact page
+                              form
+                              form text
+
+
 ===============================================================================
 */
 
@@ -13,25 +34,34 @@
 /*-----------------------------------------------------------------------------
                            1.issues to fix:
 
-                              INDEX.HTML DEBUGGED except a <br>. ABOUT.HTML DEBUGGED. CONTACT ALMOST DEBUGGED.
-                            1. PHOTOSHOP IMAGES TO GREY
-                            2. CLEAN CODE
-                            3. TEST SITE
-                            4. DEBUG
+                            1. lemuelreyes.com only shows index.html page
+                            2. CROSS BROWSER TEST
+                            3. COMPLETE THE VALIDATION OF HTML, CSS, JAVASCRIPT (98% DONE)
+                            4. *In different breakpoints the site looks extremely small.
+                            5.(OPTIONAL) PHOTOSHOP IMAGES TO GREY
 
                             BASE, 480, 720, 1080 breakpoint issues
-                            1. hero sub text is not scaling and does not move when breakpoint is scaling up. making it look weird.
-                            3. format logos
+                            1. Need help with hero texts
+                            2. Need help with logos (clarity and positioning)
 
                             1080 issues
-                            1.the only issue 1080 and beyond would probably the scaling images. they would get too big. ask for suggestions.
+                            1. Suggestions on what to do with huge pictures?
 
-                            some breakpoints the site looks small?
+                            A. CELEBRATIONS
+
+                            CSS COMPLETELY VALIDATED.
+                            ABOUT.HTML COMPLETELY VALIDATED
+                            JS VALIDATED
+                            ACCESSIBILITY VALIDATED
+                            COLOR BLIND VALIDATED
+                            SPEED TEST VALIDATED (put css together at the end)
+                            INDEX.HTML <br />? 99% validated
+                            CONTACT.HTML for label? 99% validated
 
 -------------------------------------------------------------------------------
 */
 
-
+/*base breakpoint*/
 /* font faces and clearfixes */
 
 @font-face {
@@ -57,13 +87,12 @@
   clear: both;
 }
 
-
 .page-content {
 width: 100%;
 overflow: hidden;
 }
 
-/* HEADER and BODY */
+/* HEADER, BODY, NAV */
 
   body { margin: 0px;
   }
@@ -156,7 +185,7 @@ overflow: hidden;
     border: 0px;
    }
 
-  /* hero image */
+  /* hero image, text */
 
   .hero-image {
     width: 100%;
@@ -224,7 +253,7 @@ overflow: hidden;
 
   /* index.html page */
 
-  /* text */
+  /* black columns */
 
   .first-black-block-column {
 
@@ -244,6 +273,8 @@ overflow: hidden;
     width: 100%;
     height: 100px;
   }
+
+/* h2, h3 text */
 
   h2 {
     margin: auto;
@@ -268,10 +299,10 @@ overflow: hidden;
     margin: 1.5em 2em;
   }
 
+
   .who-we-are {
     text-align: left;
   }
-
 
   .programs {
 
@@ -285,6 +316,8 @@ overflow: hidden;
     padding-top: 2.5em;
     padding-bottom: 2.5em;
   }
+
+/* testimonial button */
 
   .testimonial-button {
   border-top-left-radius: 5px;
@@ -302,24 +335,7 @@ overflow: hidden;
   }
 
 
-  .location-description {
-    width: 100%;
-    height: auto;
-    padding: 3em;
-    margin: auto;
-    position: relative;
-    text-align: center;
-    color: black;
-    font-size: 1em;
-    font-family: 'Roboto', georgia, monospace;
-    letter-spacing: 0.1em;
-    line-height: 1.8em;
-  }
-
-
-  /* directions, email, links are wrapped in span*/
-
-  /* link for ICCRC */
+  /* links, email */
 
   #ICCRC-link {
     color: black;
@@ -441,6 +457,8 @@ overflow: hidden;
 
   /* distinguishes first line of text and emphasizes it*/
 
+/* lead text and big paragraph */
+
   .lead-text {
     color: black;
     font-size: 1.5em;
@@ -463,12 +481,27 @@ overflow: hidden;
 
   /* contact page */
 
+
   .office-location {
 
     width: 100%;
     height: auto;
     padding-top: 190px;
     position: relative;
+  }
+
+  .location-description {
+    width: 100%;
+    height: auto;
+    padding: 3em 0.1em;
+    margin: auto;
+    position: relative;
+    text-align: center;
+    color: black;
+    font-size: 0.9em;
+    font-family: 'Roboto', georgia, monospace;
+    letter-spacing: 0.1em;
+    line-height: 3em;
   }
 
   .contact-information {
@@ -485,7 +518,7 @@ overflow: hidden;
 
   .form-title {
     color: black;
-    font-size: 2.5em;
+    font-size: 1.3em;
     text-align: center;
     font-family: 'Roboto', georgia, monospace;
     letter-spacing: 1.5px;
@@ -518,7 +551,8 @@ overflow: hidden;
   text-align: left;
   width: 77%;
   height: auto;
-  box-shadow: 5px rgba(0, 0, 0, 1);
+  box-shadow: inset 0px -3px 1px rgba(0, 0, 0, 0.45),
+  0px 2px 2px rgba(0, 0, 0, 1);
   text-transform: uppercase;
   letter-spacing: 0.5px;
   }
@@ -550,10 +584,11 @@ overflow: hidden;
   max-width: 120px;
   }
 
+/* form text */
+
   .fill-info {
   color: black;
   font-size: 20px;
   margin-bottom: 5em;
 
   }
-}
