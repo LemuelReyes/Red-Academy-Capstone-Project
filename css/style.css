@@ -11,7 +11,7 @@
                               (in descending order)
                               fontfaces, clearfixes, page-content
                               header, body, nav
-                              hero image, text
+                              hero image, text, top banner
                               index.html
                               black columns
                               h3, h3 text
@@ -37,21 +37,16 @@
                             1. lemuelreyes.com only shows index.html page
                             2. CROSS BROWSER TEST
                             3. COMPLETE THE VALIDATION OF HTML, CSS, JAVASCRIPT (98% DONE)
-                            4. *In different breakpoints the site looks extremely small.
-                            5.(OPTIONAL) PHOTOSHOP IMAGES TO GREY
-                            6. bp 404, the sub text not responding.
-
-                            BASE, 480, 720, 1080 breakpoint issues
-                            1. Hero texts. must fix vh.
-                            2. Need help with logos (clarity and positioning)
-
-                            1080 issues
-                            1. Suggestions on what to do with huge pictures?
+                            4. bp 404, the sub text not responding.
+                            5. bp 1024 hero image messed up / text too.
+                             css is not working when i try to translate
+                             the html of class="top banner" to css. image just disappears.
 
                             A. CELEBRATIONS
                             BASE BREAKPOINT COMPLETE
                             480 BREAKPOINT COMPLETE
                             720 BREAKPOINT COMPLETE
+                            1024 ALMOST COMPLETE ( FIX FONT/HERO IMG)
                             CSS COMPLETELY VALIDATED
                             ABOUT.HTML COMPLETELY VALIDATED
                             JS VALIDATED
@@ -60,7 +55,12 @@
                             SPEED TEST VALIDATED (put css together at the end)
                             INDEX.HTML <br />? 99% validated
                             CONTACT.HTML for label? 99% validated
-
+                            REFORMATTING TOOK ME FROM 15MB to 1210KB.
+                            AHA MOMENT THE PICTURES. EXPLAINS WHY MY SITE IS SO SLOW.
+                            INSPECTOR TOOLS HELPED ALOT.
+                            BREAKING MY CSS INTO CHUNKS HELPED ME NOT FEEL OVERWHELMED AND GOT THINGS DONE FASTER
+                            CONTROL F SHORTCUTS REALLY HELPED
+                            DELETING REDUNDANT CODE HELPED THINGS EASIER
 -------------------------------------------------------------------------------
 */
 
@@ -188,7 +188,7 @@ overflow: hidden;
     border: 0px;
    }
 
-  /* hero image, text */
+  /* hero image, text, top banner */
 
   .top-banner {
       background-image: url('images/hero-img-index.jpg');
@@ -421,8 +421,8 @@ overflow: hidden;
   }
 
   .capic-logo {
-    height:auto;
-    width: 21%;
+    height: auto;
+    width: 18%;
     padding-left: 10px;
     padding-right: 10px;
     padding-top: 30px;

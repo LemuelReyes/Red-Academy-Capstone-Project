@@ -89,11 +89,12 @@
   /*logos*/
 
   .capic-logo {
-    width: 30%;
+    width: 15%;
+    padding-left: 2.5em;
   }
 
   .iccrc-logo {
-    width: 33%;
+    width: 40%;
   }
 
   /* about.html text */

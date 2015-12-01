@@ -138,12 +138,13 @@ breakpoint-1024
   /*logos*/
 
   .capic-logo {
-    width: 32%;
+    width: 16%;
+    padding-left: 3em;
   }
 
   .iccrc-logo {
     height:auto;
-    width: 33%;
+    width: 41%;
     padding-left: 10px;
     padding-right: 10px;
   }
