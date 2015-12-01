@@ -19,19 +19,20 @@
   .hero-image {
     padding-top: 247px;
     position: relative;
+    height: 52vh;
   }
 
   .hero-main-text {
 
-    margin-top: 14em;
-    margin-left: 3em;
+    margin-top: 22vh;
+    margin-left: 16vh;
     font-size: 2em;
     letter-spacing: 0.1em;
   }
 
   .hero-sub-text {
-    margin-top: 22.5em;
-    margin-left: 18em;
+    margin-top: 38vh;
+    margin-left: 61vh;
     font-size: 1.5em;
     letter-spacing: 0.3em;
   }
@@ -81,38 +82,19 @@
   /* about.html images */
 
   .cufflink-img {
-    padding-top: 205px;
+    height: 63vh;
   }
 
 
   /*logos*/
 
-  .container {
-    display: inline-block;
-  }
-
   .capic-logo {
-    height:auto;
-    width: 33%;
-    padding-left: 10px;
-    padding-right: 10px;
-    padding-top: 30px;
+    width: 30%;
   }
 
   .iccrc-logo {
-    height:auto;
     width: 33%;
-    padding-left: 10px;
-    padding-right: 10px;
   }
-
-  filmex-logo {
-    height: auto;
-    width: 33%;
-    padding-left: 10px;
-    padding-right: 10px;
-  }
-
 
   /* about.html text */
 

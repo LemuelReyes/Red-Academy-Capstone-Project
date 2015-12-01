@@ -27,15 +27,15 @@
 
 .hero-main-text {
 
-  margin-top: 13.5em;
-  margin-left: 3em;
+  margin-top: 15vh;
+  margin-left: 9vh;
   font-size: 1.5em;
   letter-spacing: 0.1em;
 }
 
 .hero-sub-text {
-  margin-top: 27em;
-  margin-left: 18em;
+  margin-top: 32vh;
+  margin-left: 39vh;
   font-size: 1em;
   letter-spacing: 0.3em;
 }
@@ -75,7 +75,8 @@ h3 {
 .testimonial-button {
 
 font-size: 1.4em;
-
+padding-left: 4vh;
+margin-left: 10vh;
 }
 
 .location-description {
@@ -90,8 +91,7 @@ font-size: 1.4em;
 
 .cufflink-img {
 
-  padding-top: 205px;
-
+height: 56vh;
 }
 
 /*logos*/
@@ -101,27 +101,12 @@ font-size: 1.4em;
 }
 
 .capic-logo {
-  height:auto;
-  width: 33%;
-  padding-left: 10px;
-  padding-right: 10px;
-  padding-top: 30px;
+  width: 25%;
 }
 
 .iccrc-logo {
-  height:auto;
   width: 33%;
-  padding-left: 10px;
-  padding-right: 10px;
 }
-
-filmex-logo {
-  height: auto;
-  width: 33%;
-  padding-left: 10px;
-  padding-right: 10px;
-}
-
 
 /* about.html text */
 
