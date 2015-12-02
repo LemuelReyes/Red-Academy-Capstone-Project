@@ -1,0 +1,14 @@
+@media all and (min-width: 1px) and (max-width: 311px) {
+
+.hero-main-text {
+  width: 78%;
+  margin-top: 18vh;
+  margin-left: 6vh;
+}
+
+.hero-subtext {
+  margin-top: 33vh;
+  margin-left: 14vh;
+}
+
+}

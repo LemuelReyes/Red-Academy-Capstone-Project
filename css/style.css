@@ -122,6 +122,7 @@ overflow: hidden;
     margin-top: 0px;
     letter-spacing: 3px;
     padding-top: 3vh;
+    padding-left: 3vh;
   }
 
 
@@ -233,7 +234,7 @@ overflow: hidden;
 
   .hero-sub-text {
     position: absolute;
-    margin-top: 27vh;
+    margin-top: 33vh;
     margin-left: 44vh;
     font-size: 1em;
     font-family: 'Roboto Slab', sans-serif, monospace;
