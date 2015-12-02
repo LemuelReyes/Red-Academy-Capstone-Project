@@ -1,0 +1,206 @@
+/* -----------------------------------------------------------------------------
+breakpoint-1024
+-----------------------------------------------------------------------------*/
+
+@media all and (min-width: 1024px) {
+
+  /* ======== main page =========*/
+
+  /* header */
+
+  .header-title {
+
+    font-size: 4em;
+
+  }
+
+
+  /* nav and link appearance */
+
+  nav {
+    font-size: 1em;
+  }
+
+
+  /* hero image */
+
+  .hero-image {
+    padding-top: 270px;
+    position: relative;
+    height: 72vh;
+  }
+
+  .hero-main-text {
+    margin-top: 22vh;
+    margin-left: 16vw;
+    font-size: 3em;
+    letter-spacing: 0.1em;
+}
+
+.hero-sub-text {
+    margin-top: 44vh;
+    margin-left: 50vw;
+    font-size: 2em;
+    letter-spacing: 0.1em;
+  }
+
+  .top-banner {
+      background-image: url("images/hero-img-index.jpg");
+      background-size: cover;
+      height: 100vh;
+  }
+
+
+  /* index.html page */
+
+  .man-in-library-image {
+    height: 85vh
+  }
+
+  .paper-map-image {
+    height: 85vh
+  }
+
+
+  .team-meeting-image {
+    height: 85vh
+  }
+
+  .heart-drawing-image {
+    height: 85vh
+  }
+
+
+  /* text */
+
+  .first-black-block-column {
+  padding: 7em 0em;
+  }
+
+  .black-block-column {
+    padding: 5em 0em;
+    height: 3em;
+
+  }
+
+  h2 {
+
+    font-size: 2.5em;
+    letter-spacing: 0.1em;
+
+  }
+
+  h3 {
+
+    font-size: 1.3em;
+    padding: 2em;
+
+  }
+
+  .programs {
+
+    font-size: 1.6em;
+
+  }
+
+
+  .testimonial-button {
+
+  font-size: 1.8em;
+  margin: 0.1em 6em;
+  width: 112vh;
+  }
+
+  .location-description {
+
+    font-size: 1.6em;
+  }
+
+
+  /* about.html images */
+
+  .cufflink-img {
+    height: 85vh;
+  }
+
+  .suit-img {
+    display: block;
+    width: 100%;
+    height: 85vh;
+  }
+
+  .book-img {
+    display: block;
+    width: 100%;
+    height: 85vh;
+  }
+
+
+  /*logos*/
+
+  .capic-logo {
+    width: 16%;
+    padding-left: 3em;
+  }
+
+  .iccrc-logo {
+    height:auto;
+    width: 41%;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  /* about.html text */
+
+
+  .quote-column-content {
+
+    font-size: 1.5em;
+    letter-spacing: 0.3em;
+    line-height: 1.7em;
+
+  }
+
+  /* distinguishes first line of text and emphasizes it*/
+
+  .lead-text {
+
+    font-size: 2.5em;
+    letter-spacing: 0.1em;
+  }
+
+  /* to be used for big parapgraphs that need to be readable */
+
+  .big-paragraph {
+
+    font-size: 1.5em;
+    letter-spacing: 0.2em;
+  }
+
+  /* contact page */
+
+  .office-location {
+
+    padding-top: 248px;
+
+  }
+
+  .contact-information {
+    font-size: 1.3em;
+    letter-spacing: 1.5px;
+    padding: 1em 1em;
+  }
+
+  /* form */
+
+  .form-title {
+    font-size: 1.7em;
+    letter-spacing: 0.3em;
+  }
+
+
+  form:hover {
+    text-align: center;
+  }
+
+}
