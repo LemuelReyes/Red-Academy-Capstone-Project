@@ -512,7 +512,7 @@ overflow: hidden;
     color: black;
     font-size: 1.2em;
     text-align: center;
-    font-family: 'Roboto', georgia, monospace;
+    font-family: 'Roboto', georgia, monospace, arial, sans-serif, serif;
     letter-spacing: 1.5px;
     line-height: 3em;
     padding: 1em 1em;
