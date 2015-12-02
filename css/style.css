@@ -2,7 +2,7 @@
 ===============================================================================
                               LEGEND:
 
-                              1. issues and celebrations
+                              1. improvement for future and celebrations
                               2. base breakpoint
                               3. mobileup.css 480
                               4. tabletup.css 720
@@ -32,13 +32,13 @@
 
 
 /*-----------------------------------------------------------------------------
-                           1.issues to fix:
+                           1.improvement for future:
 
-                            1. lemuelreyes.com only shows index.html page
+                           1. compress and reformat images even more.
+                           2. use fontfaces more than googlefonts
+                           3. use LESS or SASS
+
                             2. CROSS BROWSER TEST
-                            3. COMPLETE THE VALIDATION OF HTML, CSS, JAVASCRIPT (98% DONE)
-                            INDEX.HTML <br />? 99% validated
-                            CONTACT.HTML for label? 99% validated
 
                             A. CELEBRATIONS
                             BASE BREAKPOINT COMPLETE
@@ -46,19 +46,15 @@
                             720 BREAKPOINT COMPLETE
                             1024 BREAKPOINT COMPLETE
                             CSS COMPLETELY VALIDATED
+                            INDEX.HTML COMPLETELY VALIDATED
                             ABOUT.HTML COMPLETELY VALIDATED
+                            CONTACT.HTML 99.5% VALIDATED
                             JS VALIDATED
                             ACCESSIBILITY VALIDATED
                             COLOR BLIND VALIDATED
-                            SPEED TEST VALIDATED (put css together at the end)
+                            SPEED TEST VALIDATED (Page size: 974.1kB, Load time: 618ms
+                            Perf. grade 88/100)
 
-
-                            REFORMATTING TOOK ME FROM 15MB to 1210KB.
-                            AHA MOMENT THE PICTURES. EXPLAINS WHY MY SITE IS SO SLOW.
-                            INSPECTOR TOOLS HELPED ALOT.
-                            BREAKING MY CSS INTO CHUNKS HELPED ME NOT FEEL OVERWHELMED AND GOT THINGS DONE FASTER
-                            CONTROL F SHORTCUTS REALLY HELPED
-                            DELETING REDUNDANT CODE HELPED THINGS EASIER
 -------------------------------------------------------------------------------
 */
 
@@ -194,7 +190,7 @@ overflow: hidden;
 
   .top-banner {
       background-image: url('images/hero-img-index.jpg');
-      background-size: 'cover';
+      background-size: cover ;
       height: 53vh;
   }
 
