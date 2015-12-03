@@ -331,14 +331,14 @@ overflow: hidden;
   border-bottom-right-radius: 5px;
   text-align: center;
   width: 60%;
-  padding-right: 20px;
   background:-webkit-gradient(linear, 80% 20%, 10% 21%, from(#8B958C), to(#5B6765));
   color: black;
   font-size: 1.3em;
   font-family: 'Roboto', georgia, monospace;
   letter-spacing: 0.1em;
   line-height: 1.5em;
-  margin: 0.1em 2.5em;
+  padding: 4vw;
+  margin-left: 12vw;
   }
 
 
@@ -452,7 +452,7 @@ overflow: hidden;
 
   .quote-column-content {
     margin: 0px;
-    padding-top: 0px;
+    padding: 2em;
     color:  white;
     font-size: 0.9em;
     text-align: center;
@@ -674,8 +674,8 @@ overflow: hidden;
   .testimonial-button {
 
   font-size: 1.4em;
-  padding-left: 4vh;
-  margin-left: 10vh;
+  padding-left: 4vw;
+  margin-left: 10vw;
   }
 
   .location-description {
@@ -716,7 +716,6 @@ overflow: hidden;
     font-size: 0.9em;
     letter-spacing: 0.1em;
     line-height: 1.8em;
-
   }
 
   /* distinguishes first line of text and emphasizes it*/
@@ -840,7 +839,7 @@ overflow: hidden;
     .testimonial-button {
 
     font-size: 1.6em;
-    margin: 0.1em 4.5em;
+    margin: 0vh 13vw;
     }
 
     .location-description {
@@ -874,7 +873,6 @@ overflow: hidden;
       font-size: 1.2em;
       letter-spacing: 0.3em;
       line-height: 1.7em;
-
     }
 
     /* distinguishes first line of text and emphasizes it*/
@@ -1030,8 +1028,9 @@ overflow: hidden;
     .testimonial-button {
 
     font-size: 1.8em;
-    margin: 0.1em 6em;
-    width: 112vh;
+    margin: 0vh 18vw;
+    width: 50vw;
+    padding: 1em;
     }
 
     .location-description {
@@ -1081,6 +1080,7 @@ overflow: hidden;
       font-size: 1.5em;
       letter-spacing: 0.3em;
       line-height: 1.7em;
+      padding: 2.3em;
 
     }
 
